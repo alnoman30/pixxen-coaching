@@ -1,0 +1,25 @@
+<svg width="752" height="452" viewBox="0 0 752 452" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_760_2641)">
+<rect width="752" height="452" fill="white"/>
+<rect y="113" width="752" height="1" fill="#F3E5CD"/>
+<rect y="226" width="752" height="1" fill="#F3E5CD"/>
+<rect y="339" width="752" height="1" fill="#F3E5CD"/>
+<rect x="93" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<rect x="206" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<rect x="319" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<rect x="432" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<rect x="545" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<rect x="658" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<circle cx="376" cy="227" r="113" fill="url(#paint0_radial_760_2641)"/>
+<path d="M421.429 197H398.714V185.75C398.714 183.68 397.018 182 394.929 182H357.071C354.982 182 353.286 183.68 353.286 185.75V197H330.571C326.392 197 323 200.36 323 204.5V264.5C323 268.64 326.392 272 330.571 272H421.429C425.608 272 429 268.64 429 264.5V204.5C429 200.36 425.608 197 421.429 197ZM391.143 197H360.857V189.5H391.143V197Z" fill="#B88A44"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_760_2641" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(376 227) rotate(90) scale(113)">
+<stop stop-color="#F7F4EF"/>
+<stop offset="1" stop-color="#F3E5CD"/>
+</radialGradient>
+<clipPath id="clip0_760_2641">
+<rect width="752" height="452" fill="white"/>
+</clipPath>
+</defs>
+</svg>

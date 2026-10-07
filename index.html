@@ -1,0 +1,2495 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coaching</title>
+    <!-- Splide CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
+    />
+    <!-- swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body class="bg-white">
+    <nav
+      id="coaching-main-nav"
+      class="bg-transparent border-b border-white/12 transition-colors duration-500 ease-in-out"
+    >
+      <div class="mx-auto">
+        <div class="flex items-center justify-between h-12">
+          <div class="flex items-center sm:gap-4 gap-3">
+            <!-- Desktop Sidebar Button -->
+            <button
+              id="desktop-sidebar"
+              aria-label="Toggle menu"
+              class="hidden lg:block text-[#10202F] hover:text-green2 xl:px-19 md:px-6 py-5 bg-transparent border-r border-white/12 hover:bg-[#B88A44] cursor-pointer transition-colors"
+            >
+              <svg
+                width="42"
+                height="8"
+                viewBox="0 0 42 8"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="42" height="2" fill="#FFFFFF" />
+                <rect y="6" width="42" height="2" fill="#FFFFFF" />
+              </svg>
+            </button>
+            <!-- Mobile Hamburger -->
+            <button
+              id="mobile-menu-toggle"
+              class="lg:hidden text-white hover:text-[#0751A4] p-2 transition-colors"
+              aria-label="Toggle mobile menu"
+            >
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect y="12" width="32" height="2" fill="#FFFFFF" />
+                <rect y="18" width="32" height="2" fill="#FFFFFF" />
+              </svg>
+            </button>
+            <a href="index.html" class="flex items-center">
+              <!-- replace with your logo img -->
+              <img
+                src="assets/images/coaching-pixxen-logo.svg"
+                alt="Pixxen"
+                class="img-fluid sm:w-auto w-34"
+              />
+            </a>
+          </div>
+
+          <!-- Desktop Menu -->
+          <div class="hidden lg:flex items-center space-x-6 xl:space-x-8 farro">
+            <!-- ====== SERVICES DROPDOWN ====== -->
+            <div class="desktop-dropdown">
+              <a
+                href="#services"
+                class="text-white hover:text-[#B88A44] transition-colors text-sm xl:text-base font-medium leading-5 desktop-dropdown-toggle"
+              >
+                Services<span class="desktop-dropdown-icon ml-1">+</span>
+              </a>
+
+              <!-- Mega panel: list LEFT + grid RIGHT -->
+              <div class="desktop-dropdown-menu">
+                <!-- LEFT: service items -->
+                <ul class="dropdown-service-list">
+                  <li>
+                    <a href="mobile-app-design.html">
+                      <span class="service-icon">
+                        <!-- Mobile icon -->
+                        <img
+                          src="assets/images/dropdownicon1.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      MOBILE APP DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="dashboard-design.html">
+                      <span class="service-icon">
+                        <!-- Dashboard/pie icon -->
+                        <img
+                          src="assets/images/dropdownicon2.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      DASHBOARD DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="website-design.html">
+                      <span class="service-icon">
+                        <!-- Monitor icon -->
+                        <img
+                          src="assets/images/dropdownicon3.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      WEBSITE DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="web-application-design.html">
+                      <span class="service-icon">
+                        <!-- Laptop icon -->
+                        <img
+                          src="assets/images/dropdownicon4.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      WEB APP DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="saas-design.html">
+                      <span class="service-icon">
+                        <!-- Desktop/screen icon -->
+                        <img
+                          src="assets/images/dropdownicon5.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      SAAS DESIGN
+                    </a>
+                  </li>
+                  <li>
+                    <a href="branding-design.html">
+                      <span class="service-icon">
+                        <!-- Brand/star icon -->
+                        <img
+                          src="assets/images/dropdownicon6.svg"
+                          class="img-fluid"
+                          alt="dropdown-icon"
+                        />
+                      </span>
+                      BRANDING
+                    </a>
+                  </li>
+                </ul>
+
+                <!-- right: items -->
+                <div class="flex items-end">
+                  <img src="assets/images/dropdown-shape.svg" alt />
+                </div>
+              </div>
+              <!-- end .desktop-dropdown-menu -->
+            </div>
+            <!-- ====== end SERVICES ====== -->
+
+            <a
+              href="case-study.html"
+              class="text-white hover:text-[#B88A44] transition-colors text-sm xl:text-base font-medium leading-5"
+              >Case Studies</a
+            >
+            <a
+              href="about.html"
+              class="text-white hover:text-[#B88A44] transition-colors text-sm xl:text-base font-medium leading-5"
+              >About</a
+            >
+            <a
+              href="blog.html"
+              class="text-white hover:text-[#B88A44] transition-colors text-sm xl:text-base font-medium leading-5"
+              >Blog</a
+            >
+            <a
+              href="contact.html"
+              class="text-white hover:text-[#B88A44] transition-colors text-sm xl:text-base font-medium leading-5"
+              >Contact</a
+            >
+          </div>
+
+          <!-- Desktop Buttons -->
+          <div class="hidden lg:flex items-center anton">
+            <a
+              href="contact.html"
+              class="hidden mega-reveal-btn relative overflow-hidden cursor-pointer sm:block xl:px-12 md:px-5 py-3 text-white border-x border-white/12 transition-all text-sm xl:text-base font-medium leading-5 farro"
+            >
+              <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                <span
+                  class="t-up text-sm xl:text-lg font-normal text-white uppercase"
+                  >Contact</span
+                >
+                <span
+                  class="t-down text-sm xl:text-lg font-normal text-white uppercase"
+                  >Contact</span
+                >
+              </div>
+            </a>
+            <a
+              href="contact.html"
+              class="xl:px-12 md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#B88A44] text-white transition-colors text-sm xl:text-base font-medium leading-5 farro"
+            >
+              <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+                <span
+                  class="t-up text-sm xl:text-base font-medium text-white uppercase"
+                  >Let’s Connect</span
+                >
+                <span
+                  class="t-down text-sm xl:text-base font-medium text-white uppercase"
+                  >Let’s Connect</span
+                >
+              </div>
+            </a>
+          </div>
+
+          <!-- Mobile LET'S CONNECT -->
+          <a
+            href="contact.html"
+            class="lg:hidden px-4 sm:px-5 mobile-letconnect mega-reveal-btn relative overflow-hidden cursor-pointer py-4 sm:py-4 bg-[#B88A44] text-white transition-colors text-sm xl:text-base font-medium leading-5 farro"
+          >
+            <div class="text-mask sm:h-5 h-4 overflow-hidden flex flex-col">
+              <span
+                class="t-up text-sm xl:text-base font-medium text-white uppercase"
+                >Let’s Connect</span
+              >
+              <span
+                class="t-down text-sm xl:text-base font-medium text-white uppercase"
+                >Let’s Connect</span
+              >
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- ====================== MOBILE MENU (2-panel) ====================== -->
+      <!-- Dark overlay -->
+      <div id="mobile-overlay" class="mobile-overlay"></div>
+
+      <!-- Wrapper holds both panels -->
+      <div id="mobile-menu-wrapper" class="mobile-menu-wrapper">
+        <!-- PANEL 1: Main Menu -->
+        <div id="mm-main" class="mm-panel mm-main">
+          <div class="mm-main-header">
+            <span class="mm-title">Menu</span>
+            <button id="mm-close" class="mm-close-btn" aria-label="Close menu">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <ul class="mm-nav-list">
+            <li>
+              <!-- SERVICES: opens panel 2 -->
+              <button
+                id="mm-services-trigger"
+                class="mm-nav-link w-full text-left"
+                style="background: none; border: none; cursor: pointer"
+              >
+                SERVICES
+                <span class="mm-plus">+</span>
+              </button>
+            </li>
+            <li>
+              <a href="case-study.html" class="mm-nav-link">case studies</a>
+            </li>
+            <li><a href="about.html" class="mm-nav-link">about</a></li>
+            <li><a href="blog.html" class="mm-nav-link">blog</a></li>
+            <li><a href="contact.html" class="mm-nav-link">contact</a></li>
+            <li><a href="team.html" class="mm-nav-link">team</a></li>
+            <li>
+              <div class="flex justify-start mt-8 mx-4">
+                <a
+                  href="contact.html"
+                  class="mega-reveal-btn relative overflow-hidden cursor-pointer md:px-10 md:py-4 sm:px-8 sm:py-4 px-6 py-4 rounded-2xl ease-[cubic-bezier(0.2,1,0.3,1)] active:scale-95 bg-[#B88A44] font-normal xl:font-medium farro transition-all duration-200"
+                >
+                  <div class="btn-inner relative z-2 flex items-center gap-3">
+                    <div
+                      class="icon-circle h-6 w-6 rounded-full bg-[#ffffff] flex items-center justify-center overflow-hidden"
+                    >
+                      <div class="icon-slider flex flex-row">
+                        <svg
+                          class="arrow-icon w-4 h-4 shrink-0 mx-2.5"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                            fill="#B88A44"
+                          />
+                        </svg>
+                        <svg
+                          class="arrow-icon w-4 h-4 shrink-0 mx-2.5"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M12.1716 6.77822L6.8076 1.41421L8.2218 0L16 7.77822L8.2218 15.5563L6.8076 14.1421L12.1716 8.77822H0V6.77822H12.1716Z"
+                            fill="#B88A44"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+                    <div class="text-mask h-5 overflow-hidden flex flex-col">
+                      <span
+                        class="t-up text-sm xl:text-base font-medium text-white"
+                        >Let’s Connect</span
+                      >
+                      <span
+                        class="t-down text-sm xl:text-base font-medium text-white"
+                        >Let’s Connect</span
+                      >
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- LET'S CONNECT -->
+          <div>
+            <div>
+              <div class="w-full flex justify-end">
+                <img
+                  src="assets/images/menu-mobile-shape.svg"
+                  class="img-fluid sm:w-auto w-47.5"
+                  alt="mobile menu"
+                />
+              </div>
+              <img
+                src="assets/images/coaching-mobile-footer-logo.svg"
+                class="img-fluid w-full"
+                alt="mobile menu"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 2: Services -->
+        <div id="mm-services" class="mm-panel mm-services">
+          <div class="mm-services-header">
+            <button id="mm-back" class="mm-back-btn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M19 12H5M11 6l-6 6 6 6"
+                  stroke="currentColor"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              BACK
+            </button>
+            <button
+              id="mm-services-close"
+              class="mm-close-btn"
+              aria-label="Close menu"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M10.5859 12L2.79297 4.20706L4.20718 2.79285L12.0001 10.5857L19.793 2.79285L21.2072 4.20706L13.4143 12L21.2072 19.7928L19.793 21.2071L12.0001 13.4142L4.20718 21.2071L2.79297 19.7928L10.5859 12Z"
+                  fill="white"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div>
+            <div class="mm-services-title">Services</div>
+
+            <!-- 2×3 grid -->
+            <div class="mm-services-grid">
+              <!-- Mobile App Design -->
+              <a href="mobile-app-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon1.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">MOBILE APP DESIGN</span>
+              </a>
+              <!-- Dashboard Design -->
+              <a href="dashboard-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon2.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">DASHBOARD DESIGN</span>
+              </a>
+              <!-- Website Design -->
+              <a href="website-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon3.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">WEBSITE DESIGN</span>
+              </a>
+              <!-- Web App Design -->
+              <a href="web-application-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon4.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">WEB APP DESIGN</span>
+              </a>
+              <!-- SaaS Design -->
+              <a href="saas-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon5.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">SAAS DESIGN</span>
+              </a>
+              <!-- Branding -->
+              <a href="branding-design.html" class="mm-service-card">
+                <span class="card-icon">
+                  <img
+                    src="assets/images/dropdownicon6.svg"
+                    class="img-fluid"
+                    alt="dropdown-icon"
+                  />
+                </span>
+                <span class="card-label">BRANDING</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- decorative bottom grid -->
+          <div>
+            <div>
+              <div class="w-full flex justify-end">
+                <img
+                  src="assets/images/menu-mobile-shape.svg"
+                  class="img-fluid sm:w-auto w-47.5"
+                  alt="mobile menu"
+                />
+              </div>
+              <img
+                src="assets/images/coaching-mobile-footer-logo.svg"
+                class="img-fluid w-full"
+                alt="mobile menu"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end mobile-menu-wrapper -->
+    </nav>
+
+    <!-- FULL PAGE MENU -->
+    <div
+      id="pixxen-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Main navigation"
+    >
+      <!-- TOP PANEL: slides in from top -->
+      <div class="menu-top" id="menu-top">
+        <!-- Grid decoration top-left -->
+        <div class="deco-cross" style="top: 0px; left: 0px">
+          <img src="assets/images/large-menu-top.svg" class="img-fluid" alt />
+        </div>
+
+        <!-- Grid decoration top-right area -->
+        <div class="deco-cross" style="bottom: 0px; right: 0px">
+          <img
+            src="assets/images/large-menu-bottom.svg"
+            class="img-fluid"
+            alt
+          />
+        </div>
+
+        <!-- LET'S CONNECT -->
+
+        <a
+          href="contact.html"
+          class="xl:px-12 connect-btn md:px-5 mega-reveal-btn relative overflow-hidden cursor-pointer py-3 bg-[#B88A44] text-white transition-colors text-sm xl:text-base font-medium leading-5 farro"
+        >
+          <div class="text-mask md:h-6 h-6 overflow-hidden flex flex-col">
+            <span
+              class="t-up text-sm xl:text-base font-medium text-white uppercase"
+              >Let’s Connect</span
+            >
+            <span
+              class="t-down text-sm xl:text-base font-medium text-white uppercase"
+              >Let’s Connect</span
+            >
+          </div>
+        </a>
+
+        <!-- CLOSE BUTTON -->
+        <div class="close-wrap">
+          <button class="close-btn" id="menu-close" aria-label="Close menu">
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6 6L18 18M6 18L18 6"
+                stroke="white"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <!-- NAV LINKS -->
+        <nav class="nav-columns" id="nav-columns">
+          <div class="nav-col" id="col-services">
+            <div class="nav-col-title">Services</div>
+            <ul>
+              <li><a href="mobile-app-design.html">Mobile App Design</a></li>
+              <li><a href="dashboard-design.html">Dashboard Design</a></li>
+              <li><a href="website-design.html">Website Design</a></li>
+              <li><a href="web-application-design.html">Web App Design</a></li>
+              <li><a href="saas-design.html">SaaS Design</a></li>
+              <li><a href="branding-design.html">Branding</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-pixxen">
+            <div class="nav-col-title">Pixxen</div>
+            <ul>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="case-study.html">Case Studies</a></li>
+              <li><a href="team.html">Team</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-resources">
+            <div class="nav-col-title">Resources</div>
+            <ul>
+              <li><a href="career.html">Career</a></li>
+              <li><a href="blog.html">Blogs</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-col" id="col-legal">
+            <div class="nav-col-title">Legal</div>
+            <ul>
+              <li><a href="terms.html">Terms</a></li>
+              <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- /menu-top -->
+
+      <!-- BOTTOM PANEL: slides in from bottom (logo bar) -->
+      <div class="menu-bottom" id="menu-bottom">
+        <!-- LOGO -->
+        <div class="bottom-logo" id="bottom-logo">
+          <img
+            src="assets/images/coaching-footer-pixxen-logo.svg"
+            class="img-fluid"
+            alt="largemenu"
+          />
+        </div>
+      </div>
+      <!-- /menu-bottom -->
+    </div>
+
+    <!-- Banner section -->
+    <section
+      class="relative bg-[#11263F] text-white overflow-hidden w-full min-h-screen"
+    >
+      <!-- Main Grid / Flex Layout split strictly 50/50 -->
+      <div
+        class="max-w-475 mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8 md:gap-16 lg:gap-12 h-full"
+      >
+        <!-- LEFT COLUMN: Image Bleed (50% width) -->
+        <div
+          class="relative w-full h-full xl:min-h-screen p-0 m-0 overflow-hidden order-2 xl:order-1"
+        >
+          <img
+            src="assets/images/coaching-banner-hero.webp"
+            alt="Coaching website design breakdown with floating cards and background elements"
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <!-- RIGHT COLUMN: Text Contents (50% width) -->
+        <div class="w-full order-1 xl:order-2 px-4 md:px-8 lg:px-12 mt-12 xl:flex xl:justify-center">
+          <div class="flex flex-col xl:max-w-167.5 pt-12 xl:pb-12">
+            <!-- Main Heading -->
+            <h1
+              class="coaching-heading-reveal instrument-serif text-white text-[36px] md:text-12 lg:text-[60px] xl:text-[72px] font-normal leading-none uppercase"
+            >
+              COACHING WEBSITES DESIGNED TO GENERATE DISCOVERY CALLS
+            </h1>
+
+            <!-- Subtitle Description -->
+            <p
+              class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 xl:mt-6"
+            >
+              Coaches sell a relationship, and prospects decide on the website
+              whether they can picture working with you. Pixxen builds coaching
+              website design that passes the five-second test, makes your offer
+              clear and makes the discovery call the obvious next step. Logo,
+              brand identity direction and one month of support are included.
+            </p>
+
+            <!-- CTA Button -->
+            <div class="my-4.5 md:my-6 xl:my-8">
+              <a
+                href="#"
+                class="group inline-flex items-stretch rounded-2xl border border-[#B88A44] bg-transparent overflow-hidden text-white text-sm lg:text-base font-bold uppercase"
+              >
+                <!-- Left: Label Area with cubic rolling text effect -->
+                <span
+                  class="relative flex items-center justify-center bg-[#B88A44] px-6 py-4 lg:px-8 lg:py-5 overflow-hidden transition-colors duration-500 group-hover:text-[#B88A44]"
+                >
+                  <!-- Pure fade background without sliding -->
+                  <span
+                    aria-hidden="true"
+                    class="absolute inset-0 bg-[#D8C3A5] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                  ></span>
+
+                  <!-- cube roll container -->
+                  <span class="relative block h-5 perspective-[600px]">
+                    <span
+                      aria-hidden="true"
+                      class="invisible block h-5 whitespace-nowrap"
+                      >BOOK A CALL ON CALENDLY</span
+                    >
+                    <span
+                      class="absolute inset-0 block transform-3d transform-[translateZ(-0.625rem)_rotateX(0deg)] transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:transform-[translateZ(-0.625rem)_rotateX(-90deg)]"
+                    >
+                      <!-- front face -->
+                      <span
+                        class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(0deg)_translateZ(0.625rem)]"
+                      >
+                        BOOK A CALL ON CALENDLY
+                      </span>
+                      <!-- bottom face (rolls into view) -->
+                      <span
+                        aria-hidden="true"
+                        class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(90deg)_translateZ(0.625rem)]"
+                      >
+                        BOOK A CALL ON CALENDLY
+                      </span>
+                    </span>
+                  </span>
+                </span>
+
+                <!-- Right: Arrow Area -->
+                <span
+                  class="relative flex items-center justify-center border-l border-[#B88A44] px-3 lg:px-4 text-[#B88A44] overflow-hidden group-hover:text-white transition-colors duration-500"
+                >
+                  <!-- Pure fade background without sliding -->
+                  <span
+                    aria-hidden="true"
+                    class="absolute inset-0 bg-[#B88A44] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                  ></span>
+
+                  <span
+                    class="relative w-8 h-8 overflow-hidden flex items-center justify-center"
+                  >
+                    <img
+                      src="assets/images/coaching-arrow-up-right-gold.svg"
+                      alt
+                      class="absolute inset-0 m-auto w-8 h-8 transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-full group-hover:-translate-y-full"
+                    />
+                    <img
+                      src="assets/images/coaching-arrow-up-right-white.svg"
+                      alt
+                      class="absolute inset-0 m-auto w-8 h-8 -translate-x-full translate-y-full transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-0 group-hover:translate-y-0"
+                    />
+                  </span>
+                </span>
+              </a>
+            </div>
+
+            <!-- Pricing & Includes Section -->
+            <div class="space-y-4.5 md:space-y-6 xl:space-y-8">
+              <div
+                class="instrument-serif flex flex-col gap-2 md:gap-3 text-white font-normal leading-[120%] uppercase"
+              >
+                <div class="border border-t border-white w-21.75"></div>
+                <span class="text-base md:text-xl"> EVERYTHING INCLUDED</span>
+                <span class="text-[32px] md:text-[36px]">
+                  USD 999/one-time</span
+                >
+              </div>
+
+              <!-- Checklist items -->
+              <ul
+                class="space-y-2 stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%]"
+              >
+                <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                  <img
+                    src="assets/images/coaching-banner-check.svg"
+                    alt="check"
+                    class="w-4 md:w-5.5 object-contain"
+                  />
+                  <span>Custom design, no templates</span>
+                </li>
+                <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                  <img
+                    src="assets/images/coaching-banner-check.svg"
+                    alt="check"
+                    class="w-4 md:w-5.5 object-contain"
+                  />
+                  <span>Logo and brand direction included</span>
+                </li>
+                <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+                  <img
+                    src="assets/images/coaching-banner-check.svg"
+                    alt="check"
+                    class="w-4 md:w-5.5 object-contain"
+                  />
+                  <span>One month post-launch support</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- who you are, what you offer, who you help -->
+    <section class="bg-white py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- section heading -->
+        <div class="max-w-248 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+          <!-- Top Badge -->
+          <div
+            class="inline-flex bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] px-3.5 py-1 md:px-3 md:py-1.5 lg:px-3.5 xl:px-4 xl:py-2 rounded-4xl items-center mb-3 xl:mb-4"
+          >
+            <span
+              class="stack-sans-text text-[#734909] text-xs xl:text-base font-medium leading-5 uppercase"
+              >The five-second test</span
+            >
+          </div>
+
+          <!-- Main Heading -->
+          <h2
+            class="coaching-heading-reveal instrument-serif text-[#11263F] text-[28px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-normal leading-[110%] uppercase"
+          >
+            who you are, what you offer, who you help
+          </h2>
+
+          <!-- Subtitle -->
+          <p
+            class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+          >
+            Designers who build coaching sites for a living name the same first
+            mistake: the visitor cannot tell, within five seconds of landing,
+            who the coach is, what they offer and who they help.
+          </p>
+        </div>
+
+        <!-- Grid wrap -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 lg:gap-6 xl:gap-8 items-stretch"
+        >
+          <!-- card 1-->
+          <div
+            class="coaching-card-reveal group bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col h-full cursor-pointer"
+          >
+            <!-- icon -->
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-17.5 lg:h-17.5 xl:w-24 xl:h-24 shrink-0 mb-3 md:mb-4 xl:mb-24 transition-transform duration-300 ease-out group-hover:scale-110 group-hover:-translate-y-1"
+            >
+              <img
+                src="assets/images/coaching-who-you-are.svg"
+                alt="Who you are"
+                class="w-full h-full object-contain shrink-0"
+              />
+            </div>
+
+            <!-- title -->
+            <h3
+              class="instrument-serif text-[#835817] text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase origin-left transition-all duration-300 ease-out group-hover:scale-105 group-hover:text-[#11263F]"
+            >
+              Who you are
+            </h3>
+
+            <!-- desc -->
+            <p
+              class="stack-sans-text text-[#835817] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 lg:mt-4"
+            >
+              Your name, your photo and one line of positioning. People hire a
+              person, not a practice name.
+            </p>
+          </div>
+
+          <!-- card 2-->
+          <div
+            class="coaching-card-reveal group bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col h-full cursor-pointer"
+          >
+            <!-- icon -->
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-17.5 lg:h-17.5 xl:w-24 xl:h-24 shrink-0 mb-3 md:mb-4 xl:mb-24 transition-transform duration-300 ease-out group-hover:scale-110 group-hover:-translate-y-1"
+            >
+              <img
+                src="assets/images/coaching-what-you-offer.svg"
+                alt="What you offer"
+                class="w-full h-full object-contain shrink-0"
+              />
+            </div>
+
+            <!-- title -->
+            <h3
+              class="instrument-serif text-[#835817] text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase origin-left transition-all duration-300 ease-out group-hover:scale-105 group-hover:text-[#11263F]"
+            >
+              What you offer
+            </h3>
+
+            <!-- desc -->
+            <p
+              class="stack-sans-text text-[#835817] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 lg:mt-4"
+            >
+              The shape of working with you, stated simply: one-to-one, group,
+              intensive, program.
+            </p>
+          </div>
+
+          <!-- card 3-->
+          <div
+            class="coaching-card-reveal group bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col h-full cursor-pointer"
+          >
+            <!-- icon -->
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-17.5 lg:h-17.5 xl:w-24 xl:h-24 shrink-0 mb-3 md:mb-4 xl:mb-24 transition-transform duration-300 ease-out group-hover:scale-110 group-hover:-translate-y-1"
+            >
+              <img
+                src="assets/images/coaching-who-you-help.svg"
+                alt="Who you help"
+                class="w-full h-full object-contain shrink-0"
+              />
+            </div>
+
+            <!-- title -->
+            <h3
+              class="instrument-serif text-[#835817] text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase origin-left transition-all duration-300 ease-out group-hover:scale-105 group-hover:text-[#11263F]"
+            >
+              Who you help
+            </h3>
+
+            <!-- desc -->
+            <p
+              class="stack-sans-text text-[#835817] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 lg:mt-4"
+            >
+              The person, named. New managers, founders in their first exit,
+              women returning to work, athletes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clarity, credibility and one call to action -->
+    <section class="bg-[#11263F] py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- Added items-start to the grid -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-12 gap-6 md:gap-8 lg:gap-6 xl:gap-24 items-start"
+        >
+          <!-- Left Column: Title, Description, and Split Button -->
+          <div
+            class="lg:col-span-6 flex flex-col justify-start items-center lg:items-start text-center lg:text-left lg:sticky lg:top-20 self-start"
+          >
+            <h2
+              class="coaching-heading-reveal instrument-serif text-white text-[28px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-normal leading-[110%] uppercase"
+            >
+              Clarity, credibility and one call to action
+            </h2>
+            <p
+              class="stack-sans-text text-[#99B3D3] text-xs md:text-sm lg:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+            >
+              The ranking guides agree that a coaching website does three jobs:
+              clarity about the problem you solve, credibility through real
+              proof and branding, and a single clear next step. The four
+              mistakes they see most are the opposite of those jobs, and the
+              site is designed to avoid each one.
+            </p>
+
+            <!-- The Split Button -->
+            <div class="hidden lg:block lg:mt-6 xl:mt-8">
+              <a
+                href="#"
+                class="group inline-flex items-stretch rounded-2xl border border-[#B88A44] bg-transparent overflow-hidden text-white text-sm lg:text-base font-bold uppercase"
+              >
+                <!-- Left: Label Area with cubic rolling text effect -->
+                <span
+                  class="relative flex items-center justify-center bg-[#B88A44] px-6 py-4 lg:px-8 lg:py-5 overflow-hidden transition-colors duration-500 group-hover:text-[#B88A44]"
+                >
+                  <!-- Pure fade background without sliding -->
+                  <span
+                    aria-hidden="true"
+                    class="absolute inset-0 bg-[#D8C3A5] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                  ></span>
+
+                  <!-- cube roll container -->
+                  <span class="relative block h-5 perspective-[600px]">
+                    <span
+                      aria-hidden="true"
+                      class="invisible block h-5 whitespace-nowrap"
+                      >BOOK A CALL ON CALENDLY</span
+                    >
+                    <span
+                      class="absolute inset-0 block transform-3d transform-[translateZ(-0.625rem)_rotateX(0deg)] transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:transform-[translateZ(-0.625rem)_rotateX(-90deg)]"
+                    >
+                      <!-- front face -->
+                      <span
+                        class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(0deg)_translateZ(0.625rem)]"
+                      >
+                        BOOK A CALL ON CALENDLY
+                      </span>
+                      <!-- bottom face (rolls into view) -->
+                      <span
+                        aria-hidden="true"
+                        class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(90deg)_translateZ(0.625rem)]"
+                      >
+                        BOOK A CALL ON CALENDLY
+                      </span>
+                    </span>
+                  </span>
+                </span>
+
+                <!-- Right: Arrow Area -->
+                <span
+                  class="relative flex items-center justify-center border-l border-[#B88A44] px-3 lg:px-4 text-[#B88A44] overflow-hidden group-hover:text-white transition-colors duration-500"
+                >
+                  <!-- Pure fade background without sliding -->
+                  <span
+                    aria-hidden="true"
+                    class="absolute inset-0 bg-[#B88A44] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                  ></span>
+
+                  <span
+                    class="relative w-8 h-8 overflow-hidden flex items-center justify-center"
+                  >
+                    <img
+                      src="assets/images/coaching-arrow-up-right-gold.svg"
+                      alt
+                      class="absolute inset-0 m-auto w-8 h-8 transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-full group-hover:-translate-y-full"
+                    />
+                    <img
+                      src="assets/images/coaching-arrow-up-right-white.svg"
+                      alt
+                      class="absolute inset-0 m-auto w-8 h-8 -translate-x-full translate-y-full transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-0 group-hover:translate-y-0"
+                    />
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Right Column: 4 Stacked Points with Dividers -->
+          <div class="lg:col-span-6 flex flex-col border-t border-white/12">
+            <!-- Item 1 -->
+            <div
+              class="coaching-card-reveal group py-4 md:py-6 lg:py-5 xl:py-8 flex flex-col items-center lg:items-start text-center lg:text-left border-b border-white/12"
+            >
+              <div class="mb-2 flex items-center gap-2">
+                <div
+                  class="inline-flex gap-1.5 items-center bg-[#B88A44] px-2 py-1 md:px-3 rounded-full stack-sans-text text-white text-sm md:text-base font-bold leading-5 uppercase mb-3 xl:mb-4"
+                >
+                  <img
+                    src="assets/images/coaching-exclaimation-icon.svg"
+                    alt="exclaimation"
+                    class="w-4.5 h-4.5 md:w-5 md:h-5"
+                  />
+                  <span>01</span>
+                </div>
+              </div>
+              <h3
+                class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-300"
+              >
+                UNCLEAR COPY
+              </h3>
+              <p
+                class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-2 md:mt-3 xl:mt-4"
+              >
+                Fixed by the five-second hero and one message per page.
+              </p>
+            </div>
+            <!-- Item 2 -->
+            <div
+              class="coaching-card-reveal group py-4 md:py-6 lg:py-5 xl:py-8 flex flex-col items-center lg:items-start text-center lg:text-left border-b border-white/12"
+            >
+              <div class="mb-2 flex items-center gap-2">
+                <div
+                  class="inline-flex gap-1.5 items-center bg-[#B88A44] px-2 py-1 md:px-3 rounded-full stack-sans-text text-white text-sm md:text-base font-bold leading-5 uppercase mb-3 xl:mb-4"
+                >
+                  <img
+                    src="assets/images/coaching-exclaimation-icon.svg"
+                    alt="exclaimation"
+                    class="w-4.5 h-4.5 md:w-5 md:h-5"
+                  />
+                  <span>02</span>
+                </div>
+              </div>
+              <h3
+                class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-300"
+              >
+                No site strategy
+              </h3>
+              <p
+                class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-2 md:mt-3 xl:mt-4"
+              >
+                Fixed by planning the full site before designing a single page:
+                which pages exist, what each one is for, where each one sends
+                the visitor.
+              </p>
+            </div>
+            <!-- Item 3 -->
+            <div
+              class="coaching-card-reveal group py-4 md:py-6 lg:py-5 xl:py-8 flex flex-col items-center lg:items-start text-center lg:text-left border-b border-white/12"
+            >
+              <div class="mb-2 flex items-center gap-2">
+                <div
+                  class="inline-flex gap-1.5 items-center bg-[#B88A44] px-2 py-1 md:px-3 rounded-full stack-sans-text text-white text-sm md:text-base font-bold leading-5 uppercase mb-3 xl:mb-4"
+                >
+                  <img
+                    src="assets/images/coaching-exclaimation-icon.svg"
+                    alt="exclaimation"
+                    class="w-4.5 h-4.5 md:w-5 md:h-5"
+                  />
+                  <span>03</span>
+                </div>
+              </div>
+              <h3
+                class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-300"
+              >
+                Too many options
+              </h3>
+              <p
+                class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-2 md:mt-3 xl:mt-4"
+              >
+                Fixed by one lead magnet and one way to work with you as the
+                only two calls to action. Navigation is kept short; secondary
+                links move to the footer.
+              </p>
+            </div>
+            <!-- Item 4 -->
+            <div
+              class="coaching-card-reveal group py-4 md:py-6 lg:py-5 xl:py-8 flex flex-col items-center lg:items-start text-center lg:text-left border-b border-white/12"
+            >
+              <div class="mb-2 flex items-center gap-2">
+                <div
+                  class="inline-flex gap-1.5 items-center bg-[#B88A44] px-2 py-1 md:px-3 rounded-full stack-sans-text text-white text-sm md:text-base font-bold leading-5 uppercase mb-3 xl:mb-4"
+                >
+                  <img
+                    src="assets/images/coaching-exclaimation-icon.svg"
+                    alt="exclaimation"
+                    class="w-4.5 h-4.5 md:w-5 md:h-5"
+                  />
+                  <span>04</span>
+                </div>
+              </div>
+              <h3
+                class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-300"
+              >
+                Not enough content
+              </h3>
+              <p
+                class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-2 md:mt-3 xl:mt-4"
+              >
+                Fixed by a content structure that gives visitors a reason to
+                arrive and return: articles, podcast episodes or videos,
+                whichever you actually produce.
+              </p>
+            </div>
+          </div>
+
+          <!-- mobile cta btn -->
+          <div class="lg:hidden text-center">
+            <a
+              href="#"
+              class="group inline-flex items-stretch rounded-2xl border border-[#B88A44] bg-transparent overflow-hidden text-white text-sm lg:text-base font-bold uppercase"
+            >
+              <!-- Left: Label Area with cubic rolling text effect -->
+              <span
+                class="relative flex items-center justify-center bg-[#B88A44] px-6 py-4 lg:px-8 lg:py-5 overflow-hidden transition-colors duration-500 group-hover:text-[#B88A44]"
+              >
+                <!-- Pure fade background without sliding -->
+                <span
+                  aria-hidden="true"
+                  class="absolute inset-0 bg-[#D8C3A5] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                ></span>
+
+                <!-- cube roll container -->
+                <span class="relative block h-5 perspective-[600px]">
+                  <span
+                    aria-hidden="true"
+                    class="invisible block h-5 whitespace-nowrap"
+                    >BOOK A CALL ON CALENDLY</span
+                  >
+                  <span
+                    class="absolute inset-0 block transform-3d transform-[translateZ(-0.625rem)_rotateX(0deg)] transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:transform-[translateZ(-0.625rem)_rotateX(-90deg)]"
+                  >
+                    <!-- front face -->
+                    <span
+                      class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(0deg)_translateZ(0.625rem)]"
+                    >
+                      BOOK A CALL ON CALENDLY
+                    </span>
+                    <!-- bottom face (rolls into view) -->
+                    <span
+                      aria-hidden="true"
+                      class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(90deg)_translateZ(0.625rem)]"
+                    >
+                      BOOK A CALL ON CALENDLY
+                    </span>
+                  </span>
+                </span>
+              </span>
+
+              <!-- Right: Arrow Area -->
+              <span
+                class="relative flex items-center justify-center border-l border-[#B88A44] px-3 lg:px-4 text-[#B88A44] overflow-hidden group-hover:text-white transition-colors duration-500"
+              >
+                <!-- Pure fade background without sliding -->
+                <span
+                  aria-hidden="true"
+                  class="absolute inset-0 bg-[#B88A44] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                ></span>
+
+                <span
+                  class="relative w-8 h-8 overflow-hidden flex items-center justify-center"
+                >
+                  <img
+                    src="assets/images/coaching-arrow-up-right-gold.svg"
+                    alt
+                    class="absolute inset-0 m-auto w-8 h-8 transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-full group-hover:-translate-y-full"
+                  />
+                  <img
+                    src="assets/images/coaching-arrow-up-right-white.svg"
+                    alt
+                    class="absolute inset-0 m-auto w-8 h-8 -translate-x-full translate-y-full transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-0 group-hover:translate-y-0"
+                  />
+                </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Life coaching website design and Seven more niches, each on a page -->
+    <section class="bg-white py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- section heading -->
+        <div class="max-w-248 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+          <!-- Main Heading -->
+          <h2
+            class="coaching-heading-reveal instrument-serif text-[#11263F] text-[28px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-normal leading-[110%] uppercase"
+          >
+            Life coaching website design and Seven more niches, each on a page
+          </h2>
+
+          <!-- Subtitle -->
+          <p
+            class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+          >
+            Life coach, executive, and business coaching sites share a structure
+            but need distinct voices. Each niche gets focused messaging around
+            client problems, outcomes, and discovery calls.
+          </p>
+        </div>
+
+        <!-- Grid wrapper -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-x-4 md:gap-y-8 lg:gap-x-6 lg:gap-y-10 xl:gap-16"
+        >
+          <!-- card 1 -->
+          <div
+            class="coaching-card-reveal group flex flex-col items-center text-center gap-3 lg:gap-4 xl:gap-6"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-17.5 lg:h-17.5 xl:w-24 xl:h-24 shrink-0 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-life-coaching-and-personal-development.svg"
+                alt="Life coaching & personal development"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="instrument-serif text-[#11263F] text-2xl md:text-[22px] lg:text-[30px] xl:text-[28px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              Life coaching & personal development
+            </h3>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="coaching-card-reveal group flex flex-col items-center text-center gap-3 lg:gap-4 xl:gap-6"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-17.5 lg:h-17.5 xl:w-24 xl:h-24 shrink-0 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-executive-and-leadership.svg"
+                alt="Executive & leadership coaching"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="instrument-serif text-[#11263F] text-2xl md:text-[22px] lg:text-[30px] xl:text-[28px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              Executive & leadership coaching
+            </h3>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="coaching-card-reveal group flex flex-col items-center text-center gap-3 lg:gap-4 xl:gap-6"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-17.5 lg:h-17.5 xl:w-24 xl:h-24 shrink-0 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-business-and-founder.svg"
+                alt="Business & founder coaching"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="instrument-serif text-[#11263F] text-2xl md:text-[22px] lg:text-[30px] xl:text-[28px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              Business & founder coaching
+            </h3>
+          </div>
+
+          <!-- card 4 -->
+          <div
+            class="coaching-card-reveal group flex flex-col items-center text-center gap-3 lg:gap-4 xl:gap-6"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-17.5 lg:h-17.5 xl:w-24 xl:h-24 shrink-0 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-career-transition.svg"
+                alt="Career transition coaching"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="instrument-serif text-[#11263F] text-2xl md:text-[22px] lg:text-[30px] xl:text-[28px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              Career transition coaching
+            </h3>
+          </div>
+
+          <!-- card 5 -->
+          <div
+            class="coaching-card-reveal group flex flex-col items-center text-center gap-3 lg:gap-4 xl:gap-6"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-17.5 lg:h-17.5 xl:w-24 xl:h-24 shrink-0 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-performance-and-mindset.svg"
+                alt="Performance & mindset coaching"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="instrument-serif text-[#11263F] text-2xl md:text-[22px] lg:text-[30px] xl:text-[28px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              Performance & mindset coaching
+            </h3>
+          </div>
+
+          <!-- card 6 -->
+          <div
+            class="coaching-card-reveal group flex flex-col items-center text-center gap-3 lg:gap-4 xl:gap-6"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-17.5 lg:h-17.5 xl:w-24 xl:h-24 shrink-0 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-health-and-wellness.svg"
+                alt="Health & wellness coaching"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="instrument-serif text-[#11263F] text-2xl md:text-[22px] lg:text-[30px] xl:text-[28px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              Health & wellness coaching
+            </h3>
+          </div>
+
+          <!-- card 7 -->
+          <div
+            class="coaching-card-reveal group flex flex-col items-center text-center gap-3 lg:gap-4 xl:gap-6"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-17.5 lg:h-17.5 xl:w-24 xl:h-24 shrink-0 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-financial.svg"
+                alt="Financial coaching"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="instrument-serif text-[#11263F] text-2xl md:text-[22px] lg:text-[30px] xl:text-[28px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              Financial coaching
+            </h3>
+          </div>
+
+          <!-- card 8 -->
+          <div
+            class="coaching-card-reveal group flex flex-col items-center text-center gap-3 lg:gap-4 xl:gap-6"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 lg:w-17.5 lg:h-17.5 xl:w-24 xl:h-24 shrink-0 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-relationship.svg"
+                alt="Relationship coaching"
+                class="w-full h-full object-contain"
+              />
+            </div>
+            <h3
+              class="instrument-serif text-[#11263F] text-2xl md:text-[22px] lg:text-[30px] xl:text-[28px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              Relationship coaching
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The shape of working with you -->
+    <section
+      class="bg-[radial-gradient(49.93%_49.93%_at_50%_50.07%,#0076FF_0%,#11263F_100%)] py-12 md:py-16 lg:py-20 xl:py-24"
+    >
+      <div class="container">
+        <!-- section heading -->
+        <div class="max-w-248 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+          <!-- Main Heading -->
+          <h2
+            class="coaching-heading-reveal instrument-serif text-white text-[28px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-normal leading-[110%] uppercase"
+          >
+            The shape of working with you
+          </h2>
+
+          <!-- Subtitle -->
+          <p
+            class="stack-sans-text text-white text-xs md:text-sm lg:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+          >
+            Explore flexible coaching formats designed around how your clients
+            want to learn, grow, and work with you.
+          </p>
+        </div>
+
+        <!-- Grid wrapper -->
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-4 lg:gap-6 xl:gap-8 items-stretch"
+        >
+          <!-- card 1 -->
+          <div
+            class="coaching-card-reveal group bg-[#11263F] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col h-full"
+          >
+            <div
+              class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0 mb-3 lg:mb-4 xl:mb-7.5 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-one-to-one-coaching.svg"
+                alt="One-to-one coaching"
+                class="w-full h-full object-contain shrink-0"
+              />
+            </div>
+
+            <h3
+              class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              One-to-one coaching
+            </h3>
+
+            <p
+              class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+            >
+              Cadence, length of engagement, what a session looks like, what
+              happens between sessions.
+            </p>
+          </div>
+
+          <!-- card 2 -->
+          <div
+            class="coaching-card-reveal group bg-[#11263F] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col h-full"
+          >
+            <div
+              class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0 mb-3 lg:mb-4 xl:mb-7.5 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-group-programs.svg"
+                alt="Group programs & cohorts"
+                class="w-full h-full object-contain shrink-0"
+              />
+            </div>
+
+            <h3
+              class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              Group programs & cohorts
+            </h3>
+
+            <p
+              class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+            >
+              Start dates, group size, format, & what the group experience adds
+              that one-to-one does not.
+            </p>
+          </div>
+
+          <!-- card 3 -->
+          <div
+            class="coaching-card-reveal group bg-[#11263F] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col h-full"
+          >
+            <div
+              class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0 mb-3 lg:mb-4 xl:mb-7.5 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-intensives.svg"
+                alt="Intensives & VIP days"
+                class="w-full h-full object-contain shrink-0"
+              />
+            </div>
+
+            <h3
+              class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              Intensives & VIP days
+            </h3>
+
+            <p
+              class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+            >
+              For clients who want a concentrated engagement. Outcome, agenda
+              shape, logistics.
+            </p>
+          </div>
+
+          <!-- card 4 -->
+          <div
+            class="coaching-card-reveal group bg-[#11263F] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col h-full"
+          >
+            <div
+              class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0 mb-3 lg:mb-4 xl:mb-7.5 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+            >
+              <img
+                src="assets/images/coaching-courses.svg"
+                alt="Courses & self-paced programs"
+                class="w-full h-full object-contain shrink-0"
+              />
+            </div>
+
+            <h3
+              class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+            >
+              Courses & self-paced programs
+            </h3>
+
+            <p
+              class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+            >
+              Linked to the course platform you use. Built-in checkout is
+              confirmed on the discovery call.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Everything Your Coaching Website Needs To Convert Successfully Today -->
+    <section class="bg-[#F7F4EF] py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- section heading -->
+        <div class="max-w-248 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+          <!-- Main Heading -->
+          <h2
+            class="coaching-heading-reveal instrument-serif text-[#11263F] text-[28px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-normal leading-[110%] uppercase"
+          >
+            Everything Your Coaching Website Needs To Convert Successfully Today
+          </h2>
+
+          <!-- Subtitle -->
+          <p
+            class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+          >
+            Every element is strategically planned to communicate your
+            expertise, strengthen your personal brand, capture qualified leads,
+            and create a clear journey from first visit to booked discovery
+            call.
+          </p>
+        </div>
+
+        <!-- grid wrapper -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-1 gap-3 md:gap-4 lg:gap-6"
+        >
+          <!-- card 1 -->
+          <div
+            class="coaching-card-reveal group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div class="grid grid-cols-1 xl:grid-cols-12 items-center">
+              <!-- Left Side: Grid background image that stretches with content height -->
+              <div
+                class="xl:col-span-6 relative h-full min-h-47.5 sm:min-h-51.5 lg:min-h-68"
+              >
+                <!-- Single image containing both the grid background and the central icon -->
+                <img
+                  src="assets/images/coaching-story-posting.svg"
+                  alt="Coaching story illustration"
+                  class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                />
+              </div>
+
+              <!-- Right Side: Content & Absolute Bottom-Right Image -->
+              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12">
+                <div class="flex flex-col xl:max-w-120">
+                  <!-- Top Badge -->
+                  <div
+                    class="inline-flex self-start bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] px-3.5 py-1 md:px-3 md:py-1.5 lg:px-3.5 xl:px-4 xl:py-2 rounded-4xl items-center mb-3 lg:mb-4"
+                  >
+                    <span
+                      class="stack-sans-text text-[#734909] text-xs xl:text-base font-medium leading-5 uppercase"
+                    >
+                      Your Story & Positioning
+                    </span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h3
+                    class="instrument-serif text-[#11263F] text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                  >
+                    AN ABOUT PAGE THAT TELLS YOUR COACHING STORY
+                  </h3>
+
+                  <!-- Description -->
+                  <p
+                    class="stack-sans-text text-[#58687C] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 md:mt-4"
+                  >
+                    The about page is the second most visited page on almost
+                    every coaching site. It is written as a story: what you did
+                    before, what changed, how you work now and who you are for.
+                    Your method or framework is explained simply so the prospect
+                    can picture the work, and the page ends with the discovery
+                    call, not a contact form.
+                  </p>
+                </div>
+
+                <!-- Absolute positioned background accent image at bottom-0 right-0 -->
+                <img
+                  src="assets/images/coacing-card-grid-shape.svg"
+                  alt=""
+                  class="hidden xl:block absolute bottom-0 right-0 max-w-24.75 max-h-24.5 object-contain pointer-events-none z-0"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card 2 -->
+          <div
+            class="coaching-card-reveal group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div class="grid grid-cols-1 xl:grid-cols-12 items-center">
+              <!-- Left Side: Grid background image that stretches with content height -->
+              <div
+                class="xl:col-span-6 relative h-full min-h-47.5 sm:min-h-51.5 lg:min-h-68"
+              >
+                <!-- Single image containing both the grid background and the central icon -->
+                <img
+                  src="assets/images/coaching-content-engine.svg"
+                  alt="Coaching story illustration"
+                  class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                />
+              </div>
+
+              <!-- Right Side: Content & Absolute Bottom-Right Image -->
+              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12">
+                <div class="flex flex-col xl:max-w-120">
+                  <!-- Top Badge -->
+                  <div
+                    class="inline-flex self-start bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] px-3.5 py-1 md:px-3 md:py-1.5 lg:px-3.5 xl:px-4 xl:py-2 rounded-4xl items-center mb-3 lg:mb-4"
+                  >
+                    <span
+                      class="stack-sans-text text-[#734909] text-xs xl:text-base font-medium leading-5 uppercase"
+                    >
+                      Content engine
+                    </span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h3
+                    class="instrument-serif text-[#11263F] text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                  >
+                    blog, podcast or video, integrated rather than bolted on
+                  </h3>
+
+                  <!-- Description -->
+                  <p
+                    class="stack-sans-text text-[#58687C] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 md:mt-4"
+                  >
+                    If you want a regular stream of visitors, the site needs
+                    content people are actually searching for. The site includes
+                    a content section built for whichever format you produce:
+                    articles organized by niche, podcast episodes with player
+                    embeds and show notes, or video. Each piece ends with the
+                    same two calls to action, so content grows the list and
+                    books calls instead of just being read.
+                  </p>
+                </div>
+
+                <!-- Absolute positioned background accent image at bottom-0 right-0 -->
+                <img
+                  src="assets/images/coacing-card-grid-shape.svg"
+                  alt=""
+                  class="hidden xl:block absolute bottom-0 right-0 max-w-24.75 max-h-24.5 object-contain pointer-events-none z-0"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div
+            class="coaching-card-reveal group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div class="grid grid-cols-1 xl:grid-cols-12 items-center">
+              <!-- Left Side: Grid background image that stretches with content height -->
+              <div
+                class="xl:col-span-6 relative h-full min-h-47.5 sm:min-h-51.5 lg:min-h-68"
+              >
+                <!-- Single image containing both the grid background and the central icon -->
+                <img
+                  src="assets/images/coaching-lead-generaion.svg"
+                  alt="Coaching story illustration"
+                  class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                />
+              </div>
+
+              <!-- Right Side: Content & Absolute Bottom-Right Image -->
+              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12">
+                <div class="flex flex-col xl:max-w-120">
+                  <!-- Top Badge -->
+                  <div
+                    class="inline-flex self-start bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] px-3.5 py-1 md:px-3 md:py-1.5 lg:px-3.5 xl:px-4 xl:py-2 rounded-4xl items-center mb-3 lg:mb-4"
+                  >
+                    <span
+                      class="stack-sans-text text-[#734909] text-xs xl:text-base font-medium leading-5 uppercase"
+                    >
+                      Lead Generation
+                    </span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h3
+                    class="instrument-serif text-[#11263F] text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                  >
+                    One lead magnet, connected to the list you already run
+                  </h3>
+
+                  <!-- Description -->
+                  <p
+                    class="stack-sans-text text-[#58687C] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 md:mt-4"
+                  >
+                    One free resource, offered consistently, outperforms five
+                    competing opt-ins. The site includes a single lead magnet
+                    section, a landing page for it and the email capture,
+                    connected to the newsletter or email tool you use. A quiz or
+                    assessment can take this role if that suits your practice.
+                  </p>
+                </div>
+
+                <!-- Absolute positioned background accent image at bottom-0 right-0 -->
+                <img
+                  src="assets/images/coacing-card-grid-shape.svg"
+                  alt=""
+                  class="hidden xl:block absolute bottom-0 right-0 max-w-24.75 max-h-24.5 object-contain pointer-events-none z-0"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div
+            class="coaching-card-reveal group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div class="grid grid-cols-1 xl:grid-cols-12 items-center">
+              <!-- Left Side: Grid background image that stretches with content height -->
+              <div
+                class="xl:col-span-6 relative h-full min-h-47.5 sm:min-h-51.5 lg:min-h-68"
+              >
+                <!-- Single image containing both the grid background and the central icon -->
+                <img
+                  src="assets/images/coaching-consulting-expertise.svg"
+                  alt="Coaching story illustration"
+                  class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                />
+              </div>
+
+              <!-- Right Side: Content & Absolute Bottom-Right Image -->
+              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12">
+                <div class="flex flex-col xl:max-w-120">
+                  <!-- Top Badge -->
+                  <div
+                    class="inline-flex self-start bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] px-3.5 py-1 md:px-3 md:py-1.5 lg:px-3.5 xl:px-4 xl:py-2 rounded-4xl items-center mb-3 lg:mb-4"
+                  >
+                    <span
+                      class="stack-sans-text text-[#734909] text-xs xl:text-base font-medium leading-5 uppercase"
+                    >
+                      Consulting Expertise
+                    </span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h3
+                    class="instrument-serif text-[#11263F] text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                  >
+                    Consulting website design for solo consultants & small firms
+                  </h3>
+
+                  <!-- Description -->
+                  <p
+                    class="stack-sans-text text-[#58687C] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 md:mt-4"
+                  >
+                    Consultants share the coach's problem in a different suit:
+                    the buyer needs to understand your expertise, your
+                    engagement model and your results before a conversation.
+                    Consultant website design under this package covers
+                    expertise pages, engagement types, a process section and a
+                    clear path to an introductory call. Case study sections are
+                    structured so you can add real client work as permissions
+                    allow.
+                  </p>
+                </div>
+
+                <!-- Absolute positioned background accent image at bottom-0 right-0 -->
+                <img
+                  src="assets/images/coacing-card-grid-shape.svg"
+                  alt=""
+                  class="hidden xl:block absolute bottom-0 right-0 max-w-24.75 max-h-24.5 object-contain pointer-events-none z-0"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div
+            class="coaching-card-reveal group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div class="grid grid-cols-1 xl:grid-cols-12 items-center">
+              <!-- Left Side: Grid background image that stretches with content height -->
+              <div
+                class="xl:col-span-6 relative h-full min-h-47.5 sm:min-h-51.5 lg:min-h-68"
+              >
+                <!-- Single image containing both the grid background and the central icon -->
+                <img
+                  src="assets/images/coaching-trust-credibility.svg"
+                  alt="Coaching story illustration"
+                  class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                />
+              </div>
+
+              <!-- Right Side: Content & Absolute Bottom-Right Image -->
+              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12">
+                <div class="flex flex-col xl:max-w-120">
+                  <!-- Top Badge -->
+                  <div
+                    class="inline-flex self-start bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] px-3.5 py-1 md:px-3 md:py-1.5 lg:px-3.5 xl:px-4 xl:py-2 rounded-4xl items-center mb-3 lg:mb-4"
+                  >
+                    <span
+                      class="stack-sans-text text-[#734909] text-xs xl:text-base font-medium leading-5 uppercase"
+                    >
+                      Trust & Credibility
+                    </span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h3
+                    class="instrument-serif text-[#11263F] text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                  >
+                    Testimonials and proof, real or empty
+                  </h3>
+
+                  <!-- Description -->
+                  <p
+                    class="stack-sans-text text-[#58687C] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 md:mt-4"
+                  >
+                    Social proof is the credibility layer, and it only works if
+                    it is real. The site includes a testimonial component
+                    structured for client quotes with names and permission, a
+                    media and speaking block, and certification logos for
+                    credentials you hold. Empty states are designed so the site
+                    looks complete before the proof arrives, and nothing is ever
+                    filled with placeholder quotes.
+                  </p>
+                </div>
+
+                <!-- Absolute positioned background accent image at bottom-0 right-0 -->
+                <img
+                  src="assets/images/coacing-card-grid-shape.svg"
+                  alt=""
+                  class="hidden xl:block absolute bottom-0 right-0 max-w-24.75 max-h-24.5 object-contain pointer-events-none z-0"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card 6 -->
+          <div
+            class="coaching-card-reveal group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div class="grid grid-cols-1 xl:grid-cols-12 items-center">
+              <!-- Left Side: Grid background image that stretches with content height -->
+              <div
+                class="xl:col-span-6 relative h-full min-h-47.5 sm:min-h-51.5 lg:min-h-68"
+              >
+                <!-- Single image containing both the grid background and the central icon -->
+                <img
+                  src="assets/images/coaching-easy-call-booking.svg"
+                  alt="Coaching story illustration"
+                  class="absolute inset-0 w-full h-full object-cover pointer-events-none"
+                />
+              </div>
+
+              <!-- Right Side: Content & Absolute Bottom-Right Image -->
+              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12">
+                <div class="flex flex-col xl:max-w-120">
+                  <!-- Top Badge -->
+                  <div
+                    class="inline-flex self-start bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] px-3.5 py-1 md:px-3 md:py-1.5 lg:px-3.5 xl:px-4 xl:py-2 rounded-4xl items-center mb-3 lg:mb-4"
+                  >
+                    <span
+                      class="stack-sans-text text-[#734909] text-xs xl:text-base font-medium leading-5 uppercase"
+                    >
+                      Easy Call Booking
+                    </span>
+                  </div>
+
+                  <!-- Heading -->
+                  <h3
+                    class="instrument-serif text-[#11263F] text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                  >
+                    A discovery call page, bookable from every page
+                  </h3>
+
+                  <!-- Description -->
+                  <p
+                    class="stack-sans-text text-[#58687C] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 md:mt-4"
+                  >
+                    The site's one primary call to action is a discovery call
+                    booked through Calendly. The page explains what the call is
+                    for, how long it runs, that it is not a sales pitch, and
+                    what happens after. Every page, article and offer ends here.
+                  </p>
+                </div>
+
+                <!-- Absolute positioned background accent image at bottom-0 right-0 -->
+                <img
+                  src="assets/images/coacing-card-grid-shape.svg"
+                  alt=""
+                  class="hidden xl:block absolute bottom-0 right-0 max-w-24.75 max-h-24.5 object-contain pointer-events-none z-0"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  -->
+
+
+<!-- coaching web design process -->
+ <section class="bg-white py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- section heading -->
+        <div class="max-w-248 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+          <!-- Main Heading -->
+          <h2
+            class="coaching-heading-reveal instrument-serif text-[#11263F] text-[28px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-normal leading-[110%] uppercase"
+          >
+            coaching web design process
+          </h2>
+
+          <!-- Subtitle -->
+          <p
+            class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+          >
+            A clear, collaborative process that guides you from discovery & branding to a fully designed coaching website built for growth.
+          </p>
+        </div>
+
+
+        <!-- Items Grid Container -->
+        <div class="grid grid-cols-1 border-t border-dashed border-[#11263F]">
+          <!-- Item 01 -->
+<div class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12">
+  <div class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
+    <!-- Number Box -->
+    <div class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6">
+      1
+    </div>
+
+    <!-- Title & Mobile/Base Description -->
+    <div class="flex flex-col">
+      <h3 class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500">
+        Discovery call
+      </h3>
+
+      <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4">
+        A short Calendly call about your niche, your offers, how clients currently find you and what you want the site to do.
+      </p>
+    </div>
+  </div>
+
+  <!-- Desktop Description -->
+  <div class="hidden lg:block lg:col-span-6">
+    <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]">
+      A short Calendly call about your niche, your offers, how clients currently find you and what you want the site to do.
+    </p>
+  </div>
+</div>
+          <!-- Item 02 -->
+<div class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12">
+  <div class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
+    <!-- Number Box -->
+    <div class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6">
+      2
+    </div>
+
+    <!-- Title & Mobile/Base Description -->
+    <div class="flex flex-col">
+      <h3 class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500">
+        Logo & brand direction
+      </h3>
+
+      <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4">
+        You approve the logo mark and brand direction before any website design begins, ensuring the visual identity aligns with your coaching goals and audience.
+      </p>
+    </div>
+  </div>
+
+  <!-- Desktop Description -->
+  <div class="hidden lg:block lg:col-span-6">
+    <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]">
+      You approve the logo mark and brand direction before any website design begins, ensuring the visual identity aligns with your coaching goals and audience.
+    </p>
+  </div>
+</div>
+          <!-- Item 03 -->
+<div class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12">
+  <div class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
+    <!-- Number Box -->
+    <div class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6">
+      3
+    </div>
+
+    <!-- Title & Mobile/Base Description -->
+    <div class="flex flex-col">
+      <h3 class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500">
+       Design & build
+      </h3>
+
+      <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4">
+        We plan the full site, design the five-second hero, niche and offer pages, about, content and lead magnet structure, and develop for speed on mobile.
+      </p>
+    </div>
+  </div>
+
+  <!-- Desktop Description -->
+  <div class="hidden lg:block lg:col-span-6">
+    <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]">
+      We plan the full site, design the five-second hero, niche and offer pages, about, content and lead magnet structure, and develop for speed on mobile.
+    </p>
+  </div>
+</div>
+          <!-- Item 04 -->
+<div class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12">
+  <div class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
+    <!-- Number Box -->
+    <div class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6">
+      4
+    </div>
+
+    <!-- Title & Mobile/Base Description -->
+    <div class="flex flex-col">
+      <h3 class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500">
+      Launch & support
+      </h3>
+
+      <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4">
+        We launch, connect Calendly, your email tool and your Google Business Profile, and support you for one month.
+      </p>
+    </div>
+  </div>
+
+  <!-- Desktop Description -->
+  <div class="hidden lg:block lg:col-span-6">
+    <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]">
+      We launch, connect Calendly, your email tool and your Google Business Profile, and support you for one month.
+    </p>
+  </div>
+</div>
+      </div>
+    </section>
+
+    <!-- Recent Coaching Websites work -->
+    <section class="bg-[#F7F4EF] py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- section heading -->
+        <div class="max-w-248 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+          <!-- Main Heading -->
+          <h2
+            class="coaching-heading-reveal instrument-serif text-[#11263F] text-[28px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-normal leading-[110%] uppercase"
+          >
+            Recent Coaching Websites work
+          </h2>
+
+          <!-- Subtitle -->
+          <p
+            class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+          >
+            We are building our first coaching and consulting websites under this package. Recent brand and web design work from our studio is available on request during your discovery call.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--  Start Your Professional Coaching Website Design Today -->
+    <section
+      class="cta-sections overflow-hidden section-padding bg-[#11263F] text-center relative"
+    >
+      <img
+        src="assets/images/shape-top.png"
+        class="img-fluid absolute top-0 left-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+        alt
+      />
+      <img
+        src="assets/images/shape-right.png"
+        class="img-fluid absolute bottom-0 right-0 xl:max-w-full lg:max-w-75 md:max-w-50 sm:max-w-37.5 sm:block hidden"
+        alt
+      />
+
+      <div class="container">
+        <div class="cta-wrap z-80 relative">
+          <div class="max-w-205 mx-auto">
+            <div class="text-center max-w-205 mx-auto md:mb-12 mb-6">
+              <h2
+                class="coaching-heading-reveal instrument-serif text-white text-[32px] md:text-[36px] lg:text-[48px] xl:text-[56px] font-normal leading-[110%] uppercase"
+              >
+                Start Your Professional Coaching Website Design Today
+              </h2>
+              <p
+                class="stack-sans-text text-[#99B3D3] text-xs md:text-sm lg:text-base font-normal leading-[140%] mt-3 md:mt-6 lg:mt-4 xl:mt-6"
+              >
+                Book a short discovery call and we’ll walk through your coaching
+                niche, services, goals, and exactly what’s included in the
+                package to build the right website for your practice.
+              </p>
+
+              <div class="flex justify-center mt-6 md:mt-8 lg:mt-6 xl:mt-8">
+                <!-- Primary button -->
+                <a
+                  href="#"
+                  class="group inline-flex items-stretch rounded-2xl border border-[#B88A44] bg-transparent overflow-hidden text-white text-sm lg:text-base font-bold uppercase"
+                >
+                  <!-- Left: Label Area with cubic rolling text effect -->
+                  <span
+                    class="relative flex items-center justify-center bg-[#B88A44] px-6 py-4 lg:px-8 lg:py-5 overflow-hidden transition-colors duration-500 group-hover:text-[#B88A44]"
+                  >
+                    <!-- Pure fade background without sliding -->
+                    <span
+                      aria-hidden="true"
+                      class="absolute inset-0 bg-[#D8C3A5] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                    ></span>
+
+                    <!-- cube roll container -->
+                    <span class="relative block h-5 perspective-[600px]">
+                      <span
+                        aria-hidden="true"
+                        class="invisible block h-5 whitespace-nowrap"
+                        >BOOK A CALL ON CALENDLY</span
+                      >
+                      <span
+                        class="absolute inset-0 block transform-3d transform-[translateZ(-0.625rem)_rotateX(0deg)] transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:transform-[translateZ(-0.625rem)_rotateX(-90deg)]"
+                      >
+                        <!-- front face -->
+                        <span
+                          class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(0deg)_translateZ(0.625rem)]"
+                        >
+                          BOOK A CALL ON CALENDLY
+                        </span>
+                        <!-- bottom face (rolls into view) -->
+                        <span
+                          aria-hidden="true"
+                          class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(90deg)_translateZ(0.625rem)]"
+                        >
+                          BOOK A CALL ON CALENDLY
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+
+                  <!-- Right: Arrow Area -->
+                  <span
+                    class="relative flex items-center justify-center border-l border-[#B88A44] px-3 lg:px-4 text-[#B88A44] overflow-hidden group-hover:text-white transition-colors duration-500"
+                  >
+                    <!-- Pure fade background without sliding -->
+                    <span
+                      aria-hidden="true"
+                      class="absolute inset-0 bg-[#B88A44] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                    ></span>
+
+                    <span
+                      class="relative w-8 h-8 overflow-hidden flex items-center justify-center"
+                    >
+                      <img
+                        src="assets/images/coaching-arrow-up-right-gold.svg"
+                        alt
+                        class="absolute inset-0 m-auto w-8 h-8 transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-full group-hover:-translate-y-full"
+                      />
+                      <img
+                        src="assets/images/coaching-arrow-up-right-white.svg"
+                        alt
+                        class="absolute inset-0 m-auto w-8 h-8 -translate-x-full translate-y-full transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-0 group-hover:translate-y-0"
+                      />
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer section start -->
+    <footer class="relative">
+      <div
+        class="bg-[#11263F] text-white border-t border-b border-[#2E4056] farro"
+      >
+        <div class="container">
+          <!-- Desktop Grid Layout -->
+          <div class="grid md:grid-cols-12 md:gap-8 lg:gap-12">
+            <div
+              class="lg:col-span-8 md:col-span-7 md:py-12 py-6 flex flex-col gap-25 justify-between md:border-b-0 border-b border-[#2E4056]"
+            >
+              <div class="grid md:grid-cols-4 grid-cols-2 xl:gap-8 gap-4">
+                <!-- Services Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Services
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="mobile-app-design.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >MOBILE APP DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="dashboard-design.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >DASHBOARD DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="website-design.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >WEBSITE DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="web-application-design.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >WEB APP DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="saas-design.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >SAAS DESIGN</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="branding-design.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >BRANDING</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Pixxen Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Pixxen
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="about.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >ABOUT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="contact.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CONTACT</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="career.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CAREER</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="team.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >TEAM</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Resources Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Resources
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="case-study.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >CASE STUDIES</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="blog.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >BLOGS</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Legal Column -->
+                <div class>
+                  <p
+                    class="text-white text-base sm:text-lg md:text-xl font-semibold mb-3 lg:mb-6"
+                  >
+                    Legal
+                  </p>
+                  <ul class="space-y-2 lg:space-y-3">
+                    <li>
+                      <a
+                        href="terms.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >TERMS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="privacy.html"
+                        class="text-white hover:text-[#B88A44] transition-colors text-[12px] sm:text-[12px] sm:text-sm lg:text-base"
+                        >PRIVACY</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Copyright -->
+              <div
+                class="mt-8 lg:mt-0 pt-6 lg:pt-0 border-t border-[#2E4056] lg:border-0 md:block hidden"
+              >
+                <p class="text-white text-sm text-center lg:text-left">
+                  © 2026 PIXXEN
+                </p>
+              </div>
+            </div>
+
+            <!-- Newsletter Column -->
+            <div
+              class="md:pl-10 lg:pl-14 md:border-l border-[#2E4056] lg:col-span-4 md:col-span-5 md:py-12 sm:py-8 py-6 flex flex-col justify-between gap-5"
+            >
+              <div>
+                <p
+                  class="text-white md:text-lg text-base font-semibold md:mb-3 mb-2 lg:mb-4"
+                >
+                  Join 5,000+ design lovers.
+                </p>
+                <p class="text-white sm:text-sm text-[12px] mb-4 lg:mb-6">
+                  Monthly design insights, case studies, and inspiration
+                  straight to your inbox.
+                </p>
+
+                <!-- Email Input -->
+                <div class="relative mb-3 md:mb-8 lg:mb-12">
+                  <input
+                    type="email"
+                    placeholder="Email address"
+                    class="w-full bg-transparent border border-[#2E4056] rounded-2xl px-4 py-5 lg:py-3.5 h-16 text-white placeholder-[#ffffff] focus:outline-none focus:border-[#B88A44] transition-colors text-[12px] sm:text-sm lg:text-base pr-14"
+                  />
+                  <button
+                    class="absolute group cursor-pointer right-px top-1/2 -translate-y-1/2 bg-[#2E4056] hover:bg-[#B88A44] p-5 rounded-r-2xl transition-colors"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                    >
+                      <path
+                        d="M16.2288 9.03763L9.0768 1.88561L10.9624 0L21.3333 10.371L10.9624 20.7418L9.0768 18.8562L16.2288 11.7043H0V9.03763H16.2288Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+
+              <!-- Social Icons -->
+              <div
+                class="flex md:justify-start justify-center md:gap-2 gap-1 lg:gap-2"
+              >
+                <a
+                  href="#"
+                  class="bg-[#2E4056] hover:bg-[#B88A44] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M19.9887 11.5716C19.9029 9.94513 19.3313 8.44745 18.4163 7.22097C18.1749 7.48407 17.8785 7.7698 17.4957 8.09159C16.5881 8.85458 15.4887 9.54307 14.1834 10.101C14.3498 10.4506 14.5029 10.7899 14.6376 11.1098L14.6388 11.1125C14.6652 11.1742 14.6879 11.2306 14.7321 11.3418C14.7379 11.3562 14.7433 11.3697 14.7485 11.3825C16.2621 11.2122 17.8576 11.2749 19.4049 11.4845C19.6106 11.5123 19.805 11.5415 19.9887 11.5716ZM10.6044 4.1213C10.7783 4.36621 10.9602 4.62859 11.1803 4.95378C11.7929 5.8589 12.396 6.81391 12.9604 7.79507C13.0749 7.99416 13.187 8.19289 13.2964 8.39112C14.5193 7.90993 15.5296 7.30281 16.3438 6.62486C16.6731 6.35063 16.9383 6.093 17.1403 5.86972C15.7501 4.70277 13.9571 4 12 4C11.524 4 11.0576 4.04158 10.6044 4.1213ZM4.25266 9.99755C4.83145 9.98452 5.48467 9.94941 6.29303 9.87518C7.90024 9.72758 9.54141 9.46249 11.1549 9.05274C10.5719 8.03721 9.93888 7.02331 9.29452 6.05378C8.98479 5.58775 8.68357 5.14992 8.45484 4.82642C6.39541 5.84613 4.83794 7.72658 4.25266 9.99755ZM5.78366 17.036C6.17111 16.4693 6.68061 15.8314 7.35797 15.1374C8.81199 13.6478 10.5286 12.4878 12.5139 11.8473C12.5417 11.8391 12.5604 11.8336 12.576 11.829C12.411 11.4651 12.2562 11.1405 12.1003 10.8342C10.2643 11.3687 8.3303 11.703 6.40279 11.8762C5.46319 11.9606 4.62005 11.9981 4 12.0044C4.00102 13.9112 4.66915 15.662 5.78366 17.036ZM15.0045 19.4166C14.9001 18.8745 14.7669 18.2706 14.5899 17.574C14.2689 16.3112 13.8668 15.012 13.373 13.7078C11.3712 14.4343 9.77574 15.4974 8.54309 16.7649C7.94904 17.3757 7.51244 17.9537 7.22642 18.4203C8.55892 19.4127 10.2109 20 12 20C13.0626 20 14.0769 19.7928 15.0045 19.4166ZM16.8778 18.3414C18.4073 17.1632 19.4985 15.444 19.8652 13.4703C19.5253 13.3865 19.094 13.3005 18.6196 13.2346C17.5756 13.0897 16.5014 13.0655 15.4409 13.2018C15.8933 14.4764 16.2642 15.7332 16.5608 16.9361C16.6903 17.4614 16.7958 17.9358 16.8778 18.3414ZM12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22Z"
+                      fill="#FFFFFF"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-[#2E4056] hover:bg-[#B88A44] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.5 11C8.60457 11 9.5 10.1046 9.5 9C9.5 7.89543 8.60457 7 7.5 7H3V11H7.5ZM8.5 13H3V17H8.5C9.60457 17 10.5 16.1046 10.5 15C10.5 13.8954 9.60457 13 8.5 13ZM10.5632 11.5725C11.7239 12.2726 12.5 13.5457 12.5 15C12.5 17.2091 10.7091 19 8.5 19H1V5H7.5C9.70914 5 11.5 6.79086 11.5 9C11.5 9.97964 11.1478 10.877 10.5632 11.5725ZM15.5 6H21V7.5H15.5V6ZM23 14.5H15.5V14.75C15.5 16.2688 16.7312 17.5 18.25 17.5C19.3187 17.5 20.245 16.8904 20.7001 16H22.8338C22.2851 18.0169 20.4407 19.5 18.25 19.5C15.6266 19.5 13.5 17.3734 13.5 14.75V13.25C13.5 10.6266 15.6266 8.5 18.25 8.5C20.8734 8.5 23 10.6266 23 13.25V14.5ZM20.8965 12.5C20.57 11.3457 19.5088 10.5 18.25 10.5C16.9912 10.5 15.93 11.3457 15.6035 12.5H20.8965Z"
+                      fill="#FFFFFF"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-[#2E4056] hover:bg-[#B88A44] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13 9H17.5L17 11H13V20H11V11H7V9H11V7.12777C11 5.34473 11.1857 4.69816 11.5343 4.04631C11.8829 3.39446 12.3945 2.88288 13.0463 2.53427C13.6982 2.18565 14.3447 2 16.1278 2C16.6498 2 17.1072 2.05 17.5 2.15V4H16.1278C14.8041 4 14.401 4.07784 13.9895 4.29789C13.6862 4.46011 13.4601 4.68619 13.2979 4.98951C13.0778 5.40096 13 5.80407 13 7.12777V9Z"
+                      fill="#FFFFFF"
+                    />
+                  </svg>
+                </a>
+                <a
+                  href="#"
+                  class="bg-[#2E4056] hover:bg-[#B88A44] p-3 sm:rounded-2xl rounded-xl sm:h-16 h-13 sm:w-16 w-13 flex items-center justify-center transition-colors"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 9.55005C12.9171 8.61327 14.1111 8 15.5 8C18.5375 8 21 10.4624 21 13.5V21H19V13.5C19 11.567 17.433 10 15.5 10C13.567 10 12 11.567 12 13.5V21H10V8.5H12V9.55005ZM5 6.5C4.17157 6.5 3.5 5.82843 3.5 5C3.5 4.17157 4.17157 3.5 5 3.5C5.82842 3.5 6.5 4.17157 6.5 5C6.5 5.82843 5.82842 6.5 5 6.5ZM4 8.5H6V21H4V8.5Z"
+                      fill="#FFFFFF"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <!-- Copyright -->
+              <div class="mt-1 flex justify-center md:hidden">
+                <p class="text-white text-sm text-center lg:text-left">
+                  © 2026 PIXXEN
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="bg-[linear-gradient(180deg,#11263F_0%,#3487E8_100%)] sticky -z-10 bottom-0 left-0 w-full flex justify-center items-end"
+      >
+        <div class="flex justify-center text-center">
+          <img
+            src="assets/images/coaching-footer-pixxen-logo.svg"
+            class="img-fluid w-full object-contain"
+            alt="footerlogo"
+          />
+        </div>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13/dist/SplitText.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenLite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

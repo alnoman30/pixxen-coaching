@@ -1,0 +1,26 @@
+<svg width="752" height="452" viewBox="0 0 752 452" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_760_1976)">
+<rect width="752" height="452" fill="white"/>
+<rect y="113" width="752" height="1" fill="#F3E5CD"/>
+<rect y="226" width="752" height="1" fill="#F3E5CD"/>
+<rect y="339" width="752" height="1" fill="#F3E5CD"/>
+<rect x="93" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<rect x="206" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<rect x="319" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<rect x="432" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<rect x="545" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<rect x="658" y="-96" width="1" height="645" fill="#F3E5CD"/>
+<circle cx="376" cy="227" r="113" fill="url(#paint0_radial_760_1976)"/>
+<path d="M376.5 170C360.071 170 346.705 183.366 346.705 199.795C346.705 216.224 360.071 229.59 376.5 229.59C392.929 229.59 406.295 216.224 406.295 199.795C406.295 183.366 392.929 170 376.5 170Z" fill="#B88A44"/>
+<path d="M413.571 249.055C405.413 240.772 394.6 236.211 383.121 236.211H369.879C358.401 236.211 347.587 240.772 339.429 249.055C331.312 257.297 326.842 268.176 326.842 279.689C326.842 281.518 328.324 283 330.152 283H422.848C424.676 283 426.158 281.518 426.158 279.689C426.158 268.176 421.688 257.297 413.571 249.055Z" fill="#B88A44"/>
+</g>
+<defs>
+<radialGradient id="paint0_radial_760_1976" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(376 227) rotate(90) scale(113)">
+<stop stop-color="#F7F4EF"/>
+<stop offset="1" stop-color="#F3E5CD"/>
+</radialGradient>
+<clipPath id="clip0_760_1976">
+<rect width="752" height="452" fill="white"/>
+</clipPath>
+</defs>
+</svg>
