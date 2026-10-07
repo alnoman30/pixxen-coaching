@@ -324,3 +324,78 @@ document.addEventListener("DOMContentLoaded", function () {
 
     cards.forEach((card) => observer.observe(card));
   });
+
+
+
+  // 
+  document.addEventListener('DOMContentLoaded', () => {
+    gsap.registerPlugin(ScrollTrigger);
+
+    const wrapper = document.querySelector('.coaching-stack-wrapper');
+    const cards = gsap.utils.toArray('.coaching-card-stack');
+    if (!wrapper || cards.length < 2) return;
+
+    // ---- tweak these ----
+    const BASE_TOP = 96;     // px from viewport top where the first card sticks
+    const PEEK = 18;         // extra px per card so covered cards peek out above
+    const SCALE_STEP = 0.04; // how much a card shrinks per card stacked over it
+    const DIM_STEP = 0.05;   // overlay opacity added per card stacked over it
+    const DIM_MAX = 0.15;    // overlay opacity cap
+    // ---------------------
+
+    const mm = gsap.matchMedia();
+
+    mm.add(
+      '(min-width: 1280px) and (min-height: 700px) and (prefers-reduced-motion: no-preference)',
+      () => {
+        wrapper.classList.add('is-stacking');
+
+        const stuckTop = (i) => BASE_TOP + i * PEEK;
+        cards.forEach((card, i) => (card.style.top = `${stuckTop(i)}px`));
+
+        const update = () => {
+          const depth = cards.map(() => 0);
+
+          // progress of each card j sliding over the cards before it
+          for (let j = 1; j < cards.length; j++) {
+            const stuck = stuckTop(j);
+            const startY = stuck + cards[j - 1].offsetHeight;
+            const top = cards[j].getBoundingClientRect().top;
+            const p = gsap.utils.clamp(0, 1, (startY - top) / (startY - stuck));
+            for (let i = 0; i < j; i++) depth[i] += p;
+          }
+
+          cards.forEach((card, i) => {
+            gsap.to(card, {
+              scale: 1 - depth[i] * SCALE_STEP,
+              '--dim': Math.min(depth[i] * DIM_STEP, DIM_MAX),
+              duration: 0.3,
+              ease: 'power2.out',
+              overwrite: 'auto',
+            });
+          });
+        };
+
+        ScrollTrigger.create({
+          trigger: wrapper,
+          start: 'top bottom',
+          end: 'bottom top',
+          onUpdate: update,
+          onToggle: update,
+          onRefresh: update,
+        });
+
+        // cleanup when the screen no longer matches (resize / rotate)
+        return () => {
+          wrapper.classList.remove('is-stacking');
+          cards.forEach((card) => {
+            card.style.top = '';
+            gsap.set(card, { clearProps: 'transform,--dim' });
+          });
+        };
+      }
+    );
+
+    // images change card heights, so re-measure once everything has loaded
+    window.addEventListener('load', () => ScrollTrigger.refresh());
+  });

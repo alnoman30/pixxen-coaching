@@ -892,3 +892,28 @@ html.lenis body {
     transition: none;
   }
 }
+
+
+/* sticky doesn't work for items in separate grid rows, so the wrapper
+   becomes a flex column while stacking is active (same visual layout) */
+.coaching-stack-wrapper.is-stacking {
+  display: flex;
+  flex-direction: column;
+}
+
+.coaching-stack-wrapper.is-stacking .coaching-card-stack {
+  position: sticky;
+  transform-origin: center top;
+  will-change: transform;
+}
+
+/* dark overlay that fades in as a card gets covered */
+.coaching-card-stack::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #11263f;
+  opacity: var(--dim, 0);
+  pointer-events: none;
+  z-index: 20;
+}
