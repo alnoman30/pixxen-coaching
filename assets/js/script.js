@@ -286,48 +286,54 @@ document.addEventListener("DOMContentLoaded", function () {
     headings.forEach((h) => observer.observe(h));
   });
 
-  // 
-   document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.coaching-card-reveal');
-    if (!cards.length) return;
+  // Coaching Cards reveal JS
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = document.querySelectorAll('.coaching-card-reveal');
+  if (!cards.length) return;
 
-    // arm the cards (so they stay visible if JS fails)
-    cards.forEach((card) => card.classList.add('is-ready'));
-    void document.body.offsetHeight; // force reflow so the first transition plays
+  // ---- tweak these ----
+  const STAGGER = 220;   // ms between cards revealed together
+  const DURATION = 1300; // ms for each card's reveal
+  // ---------------------
 
-    const STAGGER = 120; // ms between cards revealed together
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries
-          .filter((entry) => entry.isIntersecting)
-          // reveal in DOM order (left to right, top to bottom)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top || a.boundingClientRect.left - b.boundingClientRect.left)
-          .forEach((entry, i) => {
-            const card = entry.target;
-            card.style.setProperty('--delay', `${i * STAGGER}ms`);
-            card.classList.add('is-revealed');
-
-            card.addEventListener(
-              'transitionend',
-              (e) => {
-                if (e.propertyName === 'transform') card.classList.add('is-done');
-              },
-              { once: false }
-            );
-
-            observer.unobserve(card);
-          });
-      },
-      { threshold: 0.15, rootMargin: '0px 0px -8% 0px' }
-    );
-
-    cards.forEach((card) => observer.observe(card));
+  // arm the cards (so they stay visible if JS fails)
+  cards.forEach((card) => {
+    card.style.setProperty('--duration', `${DURATION}ms`);
+    card.classList.add('is-ready');
   });
+  void document.body.offsetHeight; // force reflow so the first transition plays
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries
+        .filter((entry) => entry.isIntersecting)
+        // reveal in DOM order (left to right, top to bottom)
+        .sort(
+          (a, b) =>
+            a.boundingClientRect.top - b.boundingClientRect.top ||
+            a.boundingClientRect.left - b.boundingClientRect.left
+        )
+        .forEach((entry, i) => {
+          const card = entry.target;
+          card.style.setProperty('--delay', `${i * STAGGER}ms`);
+          card.classList.add('is-revealed');
+
+          card.addEventListener('transitionend', (e) => {
+            if (e.propertyName === 'transform') card.classList.add('is-done');
+          });
+
+          observer.unobserve(card);
+        });
+    },
+    { threshold: 0.15, rootMargin: '0px 0px -8% 0px' }
+  );
+
+  cards.forEach((card) => observer.observe(card));
+});
 
 
 
-  // 
+  // Coaching Cards stack on scrolltrigger
   document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);
 
@@ -399,3 +405,158 @@ document.addEventListener("DOMContentLoaded", function () {
     // images change card heights, so re-measure once everything has loaded
     window.addEventListener('load', () => ScrollTrigger.refresh());
   });
+
+  // 
+// Coaching counter JS
+document.addEventListener("DOMContentLoaded", () => {
+  gsap.registerPlugin(ScrollTrigger);
+
+  const counters = document.querySelectorAll(".coaching-counter-item");
+
+  counters.forEach((counter) => {
+    const rawVal =
+      counter.getAttribute("data-value") || counter.textContent.trim();
+
+    const prefix = counter.getAttribute("data-prefix") || "";
+    const suffix = counter.getAttribute("data-suffix") || "";
+
+    const cleanVal = rawVal.replace(/[^\d.]/g, "");
+    const chars = cleanVal.split("");
+    const isSingleDigit = cleanVal.replace(".", "").length === 1;
+
+    counter.innerHTML = "";
+
+    if (prefix) {
+      const pSpan = document.createElement("span");
+      pSpan.innerHTML = prefix;
+      counter.appendChild(pSpan);
+    }
+
+    chars.forEach((char, index) => {
+      if (char === ".") {
+        const dot = document.createElement("span");
+        dot.textContent = ".";
+        counter.appendChild(dot);
+        return;
+      }
+
+      const col = document.createElement("span");
+      col.className = "coaching-counter-digit-col";
+
+      const list = document.createElement("span");
+      list.className = "coaching-counter-digit-list";
+
+      const finalNum = parseInt(char, 10);
+
+      // Standardize the roll: 0 through 9, ending with the specific finalNum
+      const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, finalNum];
+
+      numbers.forEach((num) => {
+        const numSpan = document.createElement("span");
+        numSpan.textContent = num;
+        list.appendChild(numSpan);
+      });
+
+      col.appendChild(list);
+      counter.appendChild(col);
+
+      // Ensure first digit (index 0) starts cleanly from top
+      let startY = 0;
+
+      if (index === 0) {
+        startY = 0;
+      } else if (!isSingleDigit && index % 2 !== 0) {
+        startY = 100;
+      } else {
+        startY = -100;
+      }
+
+      ScrollTrigger.create({
+        trigger: counter,
+        start: "top bottom",
+        once: true,
+        onEnter: () => {
+          gsap.fromTo(
+            list,
+            {
+              yPercent: startY,
+            },
+            {
+              yPercent: -((numbers.length - 1) * (100 / numbers.length)),
+              duration: 2.8,
+              ease: "expo.out",
+              delay: index * 0.1,
+            },
+          );
+        },
+      });
+    });
+
+    if (suffix) {
+      const sSpan = document.createElement("span");
+      sSpan.innerHTML = suffix;
+      counter.appendChild(sSpan);
+    }
+  });
+});
+
+// painting FAQ section
+document.addEventListener("DOMContentLoaded", function () {
+  const faqItems = document.querySelectorAll(".coaching-faq-item");
+
+  function closeItem(item) {
+    const trigger = item.querySelector(".coaching-faq-trigger");
+    const content = item.querySelector(".coaching-faq-content");
+    const icon = item.querySelector(".coaching-icon-close img");
+
+    item.classList.remove("active");
+    content.style.maxHeight = "0px";
+    trigger.setAttribute("aria-expanded", "false");
+    if (icon) icon.style.transform = "rotate(0deg)";
+  }
+
+  function openItem(item) {
+    const trigger = item.querySelector(".coaching-faq-trigger");
+    const content = item.querySelector(".coaching-faq-content");
+    const icon = item.querySelector(".coaching-icon-close img");
+
+    item.classList.add("active");
+    content.style.maxHeight = content.scrollHeight + "px";
+    trigger.setAttribute("aria-expanded", "true");
+    if (icon) icon.style.transform = "rotate(45deg)";
+  }
+
+  faqItems.forEach(function (item) {
+    const trigger = item.querySelector(".coaching-faq-trigger");
+
+    function toggle() {
+      const isOpen = item.classList.contains("active");
+
+      // Close all FAQs
+      faqItems.forEach(closeItem);
+
+      // Open clicked FAQ
+      if (!isOpen) openItem(item);
+    }
+
+    trigger.addEventListener("click", toggle);
+
+    // keyboard support, since the trigger is a div with role="button"
+    trigger.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        toggle();
+      }
+    });
+  });
+
+  // keep the open item's height correct when the screen is resized
+  window.addEventListener("resize", function () {
+    const openContent = document.querySelector(
+      ".coaching-faq-item.active .coaching-faq-content"
+    );
+    if (openContent) {
+      openContent.style.maxHeight = openContent.scrollHeight + "px";
+    }
+  });
+});

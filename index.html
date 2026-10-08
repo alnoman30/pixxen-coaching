@@ -18,6 +18,7 @@
   </head>
 
   <body class="bg-white">
+    <!-- Navigation  -->
     <nav
       id="coaching-main-nav"
       class="bg-transparent border-b border-white/12 transition-colors duration-500 ease-in-out"
@@ -490,7 +491,7 @@
       <!-- end mobile-menu-wrapper -->
     </nav>
 
-    <!-- FULL PAGE MENU -->
+    <!-- Full Page Menu -->
     <div
       id="pixxen-menu"
       role="dialog"
@@ -607,159 +608,159 @@
     </div>
 
     <!-- Banner section -->
-    <section
-      class="relative bg-[#11263F] text-white overflow-hidden w-full min-h-screen"
-    >
-      <!-- Main Grid / Flex Layout split strictly 50/50 -->
+    <section class="w-full bg-[#11263F] overflow-hidden">
       <div
-        class="max-w-475 mx-auto grid grid-cols-1 xl:grid-cols-2 gap-8 md:gap-16 lg:gap-12 h-full"
+        class="max-w-475 mx-auto grid grid-cols-1 xl:grid-cols-12 mt-12 md:mt-0"
       >
-        <!-- LEFT COLUMN: Image Bleed (50% width) -->
+        <!-- Left Column (6 columns): Single Image with proper object-fit handling -->
         <div
-          class="relative w-full h-full xl:min-h-screen p-0 m-0 overflow-hidden order-2 xl:order-1"
+          class="xl:col-span-6 relative w-full p-0 m-0 lg:h-175 xl:h-full order-2 xl:order-1"
         >
           <img
             src="assets/images/coaching-banner-hero.webp"
-            alt="Coaching website design breakdown with floating cards and background elements"
-            class="w-full h-full object-cover"
+            alt="Coaching Websites Designed to Generate Discovery Calls"
+            class="w-full h-auto lg:h-full xl:h-full object-contain object-top block m-0 p-0 select-none pointer-events-none"
           />
         </div>
 
-        <!-- RIGHT COLUMN: Text Contents (50% width) -->
-        <div class="w-full order-1 xl:order-2 px-4 md:px-8 lg:px-12 mt-12 xl:flex xl:justify-center">
-          <div class="flex flex-col xl:max-w-167.5 pt-12 xl:pb-12">
-            <!-- Main Heading -->
-            <h1
-              class="coaching-heading-reveal instrument-serif text-white text-[36px] md:text-12 lg:text-[60px] xl:text-[72px] font-normal leading-none uppercase"
-            >
-              COACHING WEBSITES DESIGNED TO GENERATE DISCOVERY CALLS
-            </h1>
+        <!-- Right Column (6 columns): Content with requested responsive padding -->
+        <div
+          class="xl:col-span-6 flex flex-col justify-center px-4 py-12 md:px-8 md:py-16 lg:px-12 lg:py-20 xl:px-12 xl:py-24 2xl:px-24 2xl:py-38.75 order-1 xl:order-2"
+        >
+          <!-- Heading -->
+          <h1
+            class="coaching-heading-reveal instrument-serif text-white text-[36px] md:text-[48px] lg:text-[60px] xl:text-[72px] font-normal leading-none uppercase mb-3 xl:mb-6"
+          >
+            Coaching Websites Designed to Generate Discovery Calls
+          </h1>
 
-            <!-- Subtitle Description -->
-            <p
-              class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 xl:mt-6"
-            >
-              Coaches sell a relationship, and prospects decide on the website
-              whether they can picture working with you. Pixxen builds coaching
-              website design that passes the five-second test, makes your offer
-              clear and makes the discovery call the obvious next step. Logo,
-              brand identity direction and one month of support are included.
-            </p>
+          <!-- Description -->
+          <p
+            class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%]"
+          >
+            Coaches sell a relationship, and prospects decide on the website
+            whether they can picture working with you. Pixxen builds coaching
+            website design that passes the five-second test, makes your offer
+            clear and makes the discovery call the obvious next step. Logo,
+            brand identity direction and one month of support are included.
+          </p>
 
-            <!-- CTA Button -->
-            <div class="my-4.5 md:my-6 xl:my-8">
-              <a
-                href="#"
-                class="group inline-flex items-stretch rounded-2xl border border-[#B88A44] bg-transparent overflow-hidden text-white text-sm lg:text-base font-bold uppercase"
+          <!-- CTA Button Group -->
+          <div class="my-4.5 md:my-6 xl:my-8">
+            <!-- Primary button -->
+            <a
+              href="#"
+              class="group inline-flex items-stretch rounded-2xl border border-[#B88A44] bg-transparent overflow-hidden text-white text-sm lg:text-base font-bold uppercase"
+            >
+              <!-- Left: Label Area with cubic rolling text effect -->
+              <span
+                class="relative flex items-center justify-center bg-[#B88A44] px-6 py-4 lg:px-8 lg:py-5 overflow-hidden transition-colors duration-500 group-hover:text-[#B88A44]"
               >
-                <!-- Left: Label Area with cubic rolling text effect -->
+                <!-- Pure fade background without sliding -->
                 <span
-                  class="relative flex items-center justify-center bg-[#B88A44] px-6 py-4 lg:px-8 lg:py-5 overflow-hidden transition-colors duration-500 group-hover:text-[#B88A44]"
-                >
-                  <!-- Pure fade background without sliding -->
+                  aria-hidden="true"
+                  class="absolute inset-0 bg-[#D8C3A5] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                ></span>
+
+                <!-- cube roll container -->
+                <span class="relative block h-5 perspective-[600px]">
                   <span
                     aria-hidden="true"
-                    class="absolute inset-0 bg-[#D8C3A5] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
-                  ></span>
-
-                  <!-- cube roll container -->
-                  <span class="relative block h-5 perspective-[600px]">
+                    class="invisible block h-5 whitespace-nowrap"
+                    >BOOK A CALL ON CALENDLY</span
+                  >
+                  <span
+                    class="absolute inset-0 block transform-3d transform-[translateZ(-0.625rem)_rotateX(0deg)] transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:transform-[translateZ(-0.625rem)_rotateX(-90deg)]"
+                  >
+                    <!-- front face -->
+                    <span
+                      class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(0deg)_translateZ(0.625rem)]"
+                    >
+                      BOOK A CALL ON CALENDLY
+                    </span>
+                    <!-- bottom face (rolls into view) -->
                     <span
                       aria-hidden="true"
-                      class="invisible block h-5 whitespace-nowrap"
-                      >BOOK A CALL ON CALENDLY</span
+                      class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(90deg)_translateZ(0.625rem)]"
                     >
-                    <span
-                      class="absolute inset-0 block transform-3d transform-[translateZ(-0.625rem)_rotateX(0deg)] transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:transform-[translateZ(-0.625rem)_rotateX(-90deg)]"
-                    >
-                      <!-- front face -->
-                      <span
-                        class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(0deg)_translateZ(0.625rem)]"
-                      >
-                        BOOK A CALL ON CALENDLY
-                      </span>
-                      <!-- bottom face (rolls into view) -->
-                      <span
-                        aria-hidden="true"
-                        class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(90deg)_translateZ(0.625rem)]"
-                      >
-                        BOOK A CALL ON CALENDLY
-                      </span>
+                      BOOK A CALL ON CALENDLY
                     </span>
                   </span>
                 </span>
+              </span>
 
-                <!-- Right: Arrow Area -->
+              <!-- Right: Arrow Area -->
+              <span
+                class="relative flex items-center justify-center border-l border-[#B88A44] px-3 lg:px-4 text-[#B88A44] overflow-hidden group-hover:text-white transition-colors duration-500"
+              >
+                <!-- Pure fade background without sliding -->
                 <span
-                  class="relative flex items-center justify-center border-l border-[#B88A44] px-3 lg:px-4 text-[#B88A44] overflow-hidden group-hover:text-white transition-colors duration-500"
-                >
-                  <!-- Pure fade background without sliding -->
-                  <span
-                    aria-hidden="true"
-                    class="absolute inset-0 bg-[#B88A44] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
-                  ></span>
+                  aria-hidden="true"
+                  class="absolute inset-0 bg-[#B88A44] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                ></span>
 
-                  <span
-                    class="relative w-8 h-8 overflow-hidden flex items-center justify-center"
-                  >
-                    <img
-                      src="assets/images/coaching-arrow-up-right-gold.svg"
-                      alt
-                      class="absolute inset-0 m-auto w-8 h-8 transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-full group-hover:-translate-y-full"
-                    />
-                    <img
-                      src="assets/images/coaching-arrow-up-right-white.svg"
-                      alt
-                      class="absolute inset-0 m-auto w-8 h-8 -translate-x-full translate-y-full transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-0 group-hover:translate-y-0"
-                    />
-                  </span>
+                <span
+                  class="relative w-8 h-8 overflow-hidden flex items-center justify-center"
+                >
+                  <img
+                    src="assets/images/coaching-arrow-up-right-gold.svg"
+                    alt
+                    class="absolute inset-0 m-auto w-8 h-8 transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-full group-hover:-translate-y-full"
+                  />
+                  <img
+                    src="assets/images/coaching-arrow-up-right-white.svg"
+                    alt
+                    class="absolute inset-0 m-auto w-8 h-8 -translate-x-full translate-y-full transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-0 group-hover:translate-y-0"
+                  />
                 </span>
-              </a>
-            </div>
+              </span>
+            </a>
+          </div>
 
-            <!-- Pricing & Includes Section -->
-            <div class="space-y-4.5 md:space-y-6 xl:space-y-8">
-              <div
-                class="instrument-serif flex flex-col gap-2 md:gap-3 text-white font-normal leading-[120%] uppercase"
-              >
-                <div class="border border-t border-white w-21.75"></div>
-                <span class="text-base md:text-xl"> EVERYTHING INCLUDED</span>
-                <span class="text-[32px] md:text-[36px]">
-                  USD 999/one-time</span
-                >
-              </div>
-
-              <!-- Checklist items -->
-              <ul
-                class="space-y-2 stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%]"
-              >
-                <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
-                  <img
-                    src="assets/images/coaching-banner-check.svg"
-                    alt="check"
-                    class="w-4 md:w-5.5 object-contain"
-                  />
-                  <span>Custom design, no templates</span>
-                </li>
-                <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
-                  <img
-                    src="assets/images/coaching-banner-check.svg"
-                    alt="check"
-                    class="w-4 md:w-5.5 object-contain"
-                  />
-                  <span>Logo and brand direction included</span>
-                </li>
-                <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
-                  <img
-                    src="assets/images/coaching-banner-check.svg"
-                    alt="check"
-                    class="w-4 md:w-5.5 object-contain"
-                  />
-                  <span>One month post-launch support</span>
-                </li>
-              </ul>
+          <!-- Pricing Box -->
+          <div class="">
+            <span class="block border-t border-white w-22.5 mb-2"></span>
+            <span
+              class="instrument-serif text-white text-base md:text-xl font-normal leading-[120%] uppercase block mb-2"
+            >
+              Everything Included
+            </span>
+            <div
+              class="instrument-serif text-white text-[32px] md:text-[36px] font-normal leading-[120%] uppercase"
+            >
+              USD 999/One-Time
             </div>
           </div>
+
+          <!-- Features Checkmarks List -->
+          <ul
+            class="space-y-2 stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-4.5 md:mt-6 xl:mt-8"
+          >
+            <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+              <img
+                src="assets/images/coaching-banner-check.svg"
+                alt="check"
+                class="w-4 md:w-5.5 object-contain"
+              />
+              <span>Custom design, no templates</span>
+            </li>
+            <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+              <img
+                src="assets/images/coaching-banner-check.svg"
+                alt="check"
+                class="w-4 md:w-5.5 object-contain"
+              />
+              <span>Logo and brand direction included</span>
+            </li>
+            <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+              <img
+                src="assets/images/coaching-banner-check.svg"
+                alt="check"
+                class="w-4 md:w-5.5 object-contain"
+              />
+              <span>One month post-launch support</span>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -1546,7 +1547,7 @@
         >
           <!-- card 1 -->
           <div
-            class="coaching-card-stack group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden" 
+            class="coaching-card-stack group relative bg-white rounded-3xl md:rounded-4xl overflow-hidden"
           >
             <div class="grid grid-cols-1 xl:grid-cols-12 items-center">
               <!-- Left Side: Grid background image that stretches with content height -->
@@ -1562,7 +1563,9 @@
               </div>
 
               <!-- Right Side: Content & Absolute Bottom-Right Image -->
-              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5">
+              <div
+                class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5"
+              >
                 <div class="flex flex-col xl:max-w-120">
                   <!-- Top Badge -->
                   <div
@@ -1622,7 +1625,9 @@
               </div>
 
               <!-- Right Side: Content & Absolute Bottom-Right Image -->
-              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5">
+              <div
+                class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5"
+              >
                 <div class="flex flex-col xl:max-w-120">
                   <!-- Top Badge -->
                   <div
@@ -1683,7 +1688,9 @@
               </div>
 
               <!-- Right Side: Content & Absolute Bottom-Right Image -->
-              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5">
+              <div
+                class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5"
+              >
                 <div class="flex flex-col xl:max-w-120">
                   <!-- Top Badge -->
                   <div
@@ -1742,7 +1749,9 @@
               </div>
 
               <!-- Right Side: Content & Absolute Bottom-Right Image -->
-              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5">
+              <div
+                class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5"
+              >
                 <div class="flex flex-col xl:max-w-120">
                   <!-- Top Badge -->
                   <div
@@ -1804,7 +1813,9 @@
               </div>
 
               <!-- Right Side: Content & Absolute Bottom-Right Image -->
-              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5">
+              <div
+                class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5"
+              >
                 <div class="flex flex-col xl:max-w-120">
                   <!-- Top Badge -->
                   <div
@@ -1865,7 +1876,9 @@
               </div>
 
               <!-- Right Side: Content & Absolute Bottom-Right Image -->
-              <div class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5">
+              <div
+                class="xl:col-span-6 relative p-4 md:p-6 xl:p-12 xl:min-h-112.5"
+              >
                 <div class="flex flex-col xl:max-w-120">
                   <!-- Top Badge -->
                   <div
@@ -1910,10 +1923,232 @@
     </section>
 
     <!--  -->
+    <section
+      class="bg-[radial-gradient(50%_50%_at_50%_50%,#184F8E_0%,#11263F_100%)] py-12 md:py-16 lg:py-20 xl:py-24 overflow-hidden"
+    >
+      <div
+        class="container grid grid-cols-1 md:grid-cols-2 md:gap-x-6 lg:gap-x-8 md:items-center xl:block"
+      >
+        <!-- section heading (display: contents below xl so its children join the container grid) -->
+        <div
+          class="contents xl:grid xl:grid-cols-12 xl:gap-8 xl:items-center xl:mb-16"
+        >
+          <!-- Heading -->
+          <div
+            class="order-1 md:col-span-2 xl:col-span-6 xl:order-0 mb-4 md:mb-14 lg:mb-16 xl:mb-0 text-center xl:text-left"
+          >
+            <h2
+              class="coaching-heading-reveal instrument-serif text-white text-[28px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-normal leading-[110%] uppercase"
+            >
+              coaching website design package includes
+            </h2>
+          </div>
 
+          <div class="contents xl:block xl:col-span-6">
+            <div
+              class="contents xl:grid xl:grid-cols-12 xl:gap-7.25 xl:items-center"
+            >
+              <!-- Subtitle -->
+              <div
+                class="order-2 md:order-4 xl:order-0 xl:col-span-6 mb-10 md:mb-0 text-center md:text-left"
+              >
+                <p
+                  class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-light leading-[140%]"
+                >
+                  One fixed scope at $999, delivered as a single project you own
+                  outright rather than a platform subscription.
+                </p>
+              </div>
 
-<!-- coaching web design process -->
- <section class="bg-white py-12 md:py-16 lg:py-20 xl:py-24">
+              <!-- Pricing Box -->
+              <div
+                class="order-5 xl:order-0 xl:col-span-6 border-l border-white pl-4"
+              >
+                <span
+                  class="instrument-serif text-white text-base md:text-xl font-normal leading-[120%] uppercase block mb-2"
+                >
+                  Everything Included
+                </span>
+                <div
+                  class="instrument-serif text-white text-[32px] md:text-[36px] lg:text-[40px] font-normal leading-[120%] uppercase"
+                >
+                  USD 999/One-Time
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards Grid: Stacked vertical on mobile, horizontal scrollable row with forced equal-height items on md, full grid from lg -->
+        <div
+          class="order-3 min-w-0 md:col-span-2 mb-8 md:mb-10 lg:mb-12 xl:mb-0 flex flex-col md:flex-row lg:grid md:overflow-x-auto lg:overflow-x-visible [-ms-overflow-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden items-stretch lg:grid-cols-[1fr_56px_1fr_56px_1fr_56px_1fr] xl:grid-cols-[1fr_72px_1fr_72px_1fr_72px_1fr] snap-y md:snap-x lg:snap-none snap-mandatory pb-4 md:pb-6 lg:pb-0"
+        >
+          <!-- Card 1: Premium Logo Design -->
+          <div
+            class="coaching-card-reveal group bg-[#11263F] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between shrink-0 w-full md:w-[320px] lg:w-auto snap-start"
+          >
+            <div class="flex flex-col flex-1 justify-between">
+              <div>
+                <div
+                  class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0 mb-3 lg:mb-4 xl:mb-7.5 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+                >
+                  <img
+                    src="assets/images/coaching-premium-logo-design.svg"
+                    alt="Premium Logo Design"
+                    class="w-full h-full object-contain shrink-0"
+                  />
+                </div>
+
+                <h3
+                  class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                >
+                  Premium Logo Design
+                </h3>
+
+                <p
+                  class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+                >
+                  A clean, legible mark delivered in the formats you need for
+                  print, vehicles, signage and digital profiles.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plus Icon Column 1 -->
+          <div
+            class="flex items-center justify-center w-full md:w-16 lg:w-14 xl:w-18 h-16 md:h-auto mx-auto shrink-0 z-10"
+          >
+            <img
+              src="assets/images/coaching-card-join.svg"
+              alt="Plus"
+              class="w-10 h-10 xl:w-12 xl:h-12 object-contain"
+            />
+          </div>
+
+          <!-- Card 2: Brand Identity Direction -->
+          <div
+            class="coaching-card-reveal group bg-[#11263F] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between shrink-0 w-full md:w-[320px] lg:w-auto snap-start"
+          >
+            <div class="flex flex-col flex-1 justify-between">
+              <div>
+                <div
+                  class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0 mb-3 lg:mb-4 xl:mb-7.5 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+                >
+                  <img
+                    src="assets/images/coaching-brand-identity-direction.svg"
+                    alt="Brand Identity Direction"
+                    class="w-full h-full object-contain shrink-0"
+                  />
+                </div>
+
+                <h3
+                  class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                >
+                  Brand Identity Direction
+                </h3>
+
+                <p
+                  class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+                >
+                  Color, type and tone guidance so the website and everything
+                  around it reads as one company.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plus Icon Column 2 -->
+          <div
+            class="flex items-center justify-center w-full md:w-16 lg:w-14 xl:w-18 h-16 md:h-auto mx-auto shrink-0 z-10"
+          >
+            <img
+              src="assets/images/coaching-card-join.svg"
+              alt="Plus"
+              class="w-10 h-10 xl:w-12 xl:h-12 object-contain"
+            />
+          </div>
+
+          <!-- Card 3: Custom Website Design -->
+          <div
+            class="coaching-card-reveal group bg-[#11263F] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between shrink-0 w-full md:w-[320px] lg:w-auto snap-start"
+          >
+            <div class="flex flex-col flex-1 justify-between">
+              <div>
+                <div
+                  class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0 mb-3 lg:mb-4 xl:mb-7.5 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+                >
+                  <img
+                    src="assets/images/coaching-custom-website-design.svg"
+                    alt="Custom Website Design"
+                    class="w-full h-full object-contain shrink-0"
+                  />
+                </div>
+
+                <h3
+                  class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                >
+                  Custom Website Design
+                </h3>
+
+                <p
+                  class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+                >
+                  Designed and developed for your services, your audience and
+                  your search terms. No purchased theme.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Plus Icon Column 3 -->
+          <div
+            class="flex items-center justify-center w-full md:w-16 lg:w-14 xl:w-18 h-16 md:h-auto mx-auto shrink-0 z-10"
+          >
+            <img
+              src="assets/images/coaching-card-join.svg"
+              alt="Plus"
+              class="w-10 h-10 xl:w-12 xl:h-12 object-contain"
+            />
+          </div>
+
+          <!-- Card 4: One Month of Support -->
+          <div
+            class="coaching-card-reveal group bg-[#11263F] p-4 md:p-6 xl:p-8 rounded-3xl md:rounded-4xl flex flex-col justify-between shrink-0 w-full md:w-[320px] lg:w-auto snap-start"
+          >
+            <div class="flex flex-col flex-1 justify-between">
+              <div>
+                <div
+                  class="w-8 h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 shrink-0 mb-3 lg:mb-4 xl:mb-7.5 transition-transform duration-500 ease-out group-hover:-translate-y-1 group-hover:scale-105"
+                >
+                  <img
+                    src="assets/images/coaching-one-month-of-support.svg"
+                    alt="One Month of Support"
+                    class="w-full h-full object-contain shrink-0"
+                  />
+                </div>
+
+                <h3
+                  class="instrument-serif text-white text-2xl md:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                >
+                  One Month of Support
+                </h3>
+
+                <p
+                  class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%] mt-3 xl:mt-4"
+                >
+                  Thirty days of fixes, small copy changes and questions after
+                  launch.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- coaching web design process -->
+    <section class="bg-white py-12 md:py-16 lg:py-20 xl:py-24">
       <div class="container">
         <!-- section heading -->
         <div class="max-w-248 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
@@ -1928,121 +2163,185 @@
           <p
             class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%] mt-3 xl:mt-4"
           >
-            A clear, collaborative process that guides you from discovery & branding to a fully designed coaching website built for growth.
+            A clear, collaborative process that guides you from discovery &
+            branding to a fully designed coaching website built for growth.
           </p>
         </div>
-
 
         <!-- Items Grid Container -->
         <div class="grid grid-cols-1 border-t border-dashed border-[#11263F]">
           <!-- Item 01 -->
-<div class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12">
-  <div class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
-    <!-- Number Box -->
-    <div class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6">
-      1
-    </div>
+          <div
+            class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12"
+          >
+            <div
+              class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12"
+            >
+              <!-- Number Box -->
+              <div
+                class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6"
+              >
+                1
+              </div>
 
-    <!-- Title & Mobile/Base Description -->
-    <div class="flex flex-col">
-      <h3 class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500">
-        Discovery call
-      </h3>
+              <!-- Title & Mobile/Base Description -->
+              <div class="flex flex-col">
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                >
+                  Discovery call
+                </h3>
 
-      <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4">
-        A short Calendly call about your niche, your offers, how clients currently find you and what you want the site to do.
-      </p>
-    </div>
-  </div>
+                <p
+                  class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4"
+                >
+                  A short Calendly call about your niche, your offers, how
+                  clients currently find you and what you want the site to do.
+                </p>
+              </div>
+            </div>
 
-  <!-- Desktop Description -->
-  <div class="hidden lg:block lg:col-span-6">
-    <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]">
-      A short Calendly call about your niche, your offers, how clients currently find you and what you want the site to do.
-    </p>
-  </div>
-</div>
+            <!-- Desktop Description -->
+            <div class="hidden lg:block lg:col-span-6">
+              <p
+                class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+              >
+                A short Calendly call about your niche, your offers, how clients
+                currently find you and what you want the site to do.
+              </p>
+            </div>
+          </div>
+
           <!-- Item 02 -->
-<div class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12">
-  <div class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
-    <!-- Number Box -->
-    <div class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6">
-      2
-    </div>
+          <div
+            class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12"
+          >
+            <div
+              class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12"
+            >
+              <!-- Number Box -->
+              <div
+                class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6"
+              >
+                2
+              </div>
 
-    <!-- Title & Mobile/Base Description -->
-    <div class="flex flex-col">
-      <h3 class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500">
-        Logo & brand direction
-      </h3>
+              <!-- Title & Mobile/Base Description -->
+              <div class="flex flex-col">
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                >
+                  Logo & brand direction
+                </h3>
 
-      <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4">
-        You approve the logo mark and brand direction before any website design begins, ensuring the visual identity aligns with your coaching goals and audience.
-      </p>
-    </div>
-  </div>
+                <p
+                  class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4"
+                >
+                  You approve the logo mark and brand direction before any
+                  website design begins, ensuring the visual identity aligns
+                  with your coaching goals and audience.
+                </p>
+              </div>
+            </div>
 
-  <!-- Desktop Description -->
-  <div class="hidden lg:block lg:col-span-6">
-    <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]">
-      You approve the logo mark and brand direction before any website design begins, ensuring the visual identity aligns with your coaching goals and audience.
-    </p>
-  </div>
-</div>
+            <!-- Desktop Description -->
+            <div class="hidden lg:block lg:col-span-6">
+              <p
+                class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+              >
+                You approve the logo mark and brand direction before any website
+                design begins, ensuring the visual identity aligns with your
+                coaching goals and audience.
+              </p>
+            </div>
+          </div>
+
           <!-- Item 03 -->
-<div class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12">
-  <div class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
-    <!-- Number Box -->
-    <div class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6">
-      3
-    </div>
+          <div
+            class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12"
+          >
+            <div
+              class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12"
+            >
+              <!-- Number Box -->
+              <div
+                class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6"
+              >
+                3
+              </div>
 
-    <!-- Title & Mobile/Base Description -->
-    <div class="flex flex-col">
-      <h3 class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500">
-       Design & build
-      </h3>
+              <!-- Title & Mobile/Base Description -->
+              <div class="flex flex-col">
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                >
+                  Design & build
+                </h3>
 
-      <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4">
-        We plan the full site, design the five-second hero, niche and offer pages, about, content and lead magnet structure, and develop for speed on mobile.
-      </p>
-    </div>
-  </div>
+                <p
+                  class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4"
+                >
+                  We plan the full site, design the five-second hero, niche and
+                  offer pages, about, content and lead magnet structure, and
+                  develop for speed on mobile.
+                </p>
+              </div>
+            </div>
 
-  <!-- Desktop Description -->
-  <div class="hidden lg:block lg:col-span-6">
-    <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]">
-      We plan the full site, design the five-second hero, niche and offer pages, about, content and lead magnet structure, and develop for speed on mobile.
-    </p>
-  </div>
-</div>
+            <!-- Desktop Description -->
+            <div class="hidden lg:block lg:col-span-6">
+              <p
+                class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+              >
+                We plan the full site, design the five-second hero, niche and
+                offer pages, about, content and lead magnet structure, and
+                develop for speed on mobile.
+              </p>
+            </div>
+          </div>
+
           <!-- Item 04 -->
-<div class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12">
-  <div class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
-    <!-- Number Box -->
-    <div class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6">
-      4
-    </div>
+          <div
+            class="coaching-card-reveal group bg-transparent border-b border-dashed border-[#11263F] py-5 md:py-6 lg:py-7 xl:py-8 flex flex-row lg:grid lg:grid-cols-12 items-center gap-3 md:gap-4 lg:gap-8 xl:gap-12"
+          >
+            <div
+              class="w-full lg:col-span-6 flex flex-row items-center gap-4 sm:gap-6 lg:gap-8 xl:gap-12"
+            >
+              <!-- Number Box -->
+              <div
+                class="flex shrink-0 w-14 h-14 sm:w-16 sm:h-16 lg:w-20 xl:w-24 lg:h-20 xl:h-24 justify-center items-center bg-[#B88A44] rounded-2xl sm:rounded-[20px] lg:rounded-3xl xl:rounded-4xl instrument-serif text-white text-2xl sm:text-[26px] lg:text-[30px] xl:text-[40px] font-normal leading-[110%] uppercase transition-transform duration-500 ease-[cubic-bezier(0.34,1.56,0.64,1)] group-hover:-rotate-6"
+              >
+                4
+              </div>
 
-    <!-- Title & Mobile/Base Description -->
-    <div class="flex flex-col">
-      <h3 class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500">
-      Launch & support
-      </h3>
+              <!-- Title & Mobile/Base Description -->
+              <div class="flex flex-col">
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500"
+                >
+                  Launch & support
+                </h3>
 
-      <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4">
-        We launch, connect Calendly, your email tool and your Google Business Profile, and support you for one month.
-      </p>
-    </div>
-  </div>
+                <p
+                  class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] block lg:hidden mt-2 sm:mt-4"
+                >
+                  We launch, connect Calendly, your email tool and your Google
+                  Business Profile, and support you for one month.
+                </p>
+              </div>
+            </div>
 
-  <!-- Desktop Description -->
-  <div class="hidden lg:block lg:col-span-6">
-    <p class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]">
-      We launch, connect Calendly, your email tool and your Google Business Profile, and support you for one month.
-    </p>
-  </div>
-</div>
+            <!-- Desktop Description -->
+            <div class="hidden lg:block lg:col-span-6">
+              <p
+                class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+              >
+                We launch, connect Calendly, your email tool and your Google
+                Business Profile, and support you for one month.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -2062,13 +2361,818 @@
           <p
             class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%] mt-3 xl:mt-4"
           >
-            We are building our first coaching and consulting websites under this package. Recent brand and web design work from our studio is available on request during your discovery call.
+            We are building our first coaching and consulting websites under
+            this package. Recent brand and web design work from our studio is
+            available on request during your discovery call.
           </p>
+        </div>
+
+        <!-- Cards Grid -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 gap-3 md:gap-4 lg:gap-6 xl:gap-8"
+        >
+          <!-- Card 1: Life Coaching -->
+          <div
+            class="coaching-card-reveal group bg-white rounded-3xl md:rounded-4xl overflow-hidden flex flex-col justify-between"
+          >
+            <div>
+              <!-- Image (Edge-to-Edge, No outer padding) -->
+              <div class="relative w-full overflow-hidden h-64 md:h-72 m-0 p-0">
+                <img
+                  src="assets/images/coaching-life-coaching-website-for-personal-brand-growth.webp"
+                  alt="Life coaching website preview"
+                  class="w-full h-full object-cover block m-0 p-0 transition-transform duration-500 ease-out group-hover:scale-105"
+                />
+
+                <!-- Hover gradient overlay -->
+                <div
+                  class="absolute inset-0 pointer-events-none opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 bg-[linear-gradient(to_top,rgba(17,38,63,0.75)_0%,rgba(131,88,23,0.25)_55%,rgba(131,88,23,0)_100%)]"
+                ></div>
+              </div>
+
+              <!-- Top Content Wrapper with Padding -->
+              <div class="p-4 md:p-6 xl:p-8">
+                <!-- Badge -->
+                <div
+                  class="inline-flex self-start bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] px-3.5 py-1 md:px-3 md:py-1.5 lg:px-3.5 xl:px-4 xl:py-2 rounded-4xl items-center mb-2.5 md:mb-3 xl:mb-4"
+                >
+                  <span
+                    class="stack-sans-text text-[#734909] text-xs xl:text-base font-medium leading-5 uppercase"
+                  >
+                    Life Coaching
+                  </span>
+                </div>
+
+                <!-- Title -->
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500 mb-2.5 md:mb-3 xl:mb-4"
+                >
+                  Life Coaching Website for Personal Brand Growth
+                </h3>
+
+                <!-- Description -->
+                <p
+                  class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] mb-4 lg:mb-5 xl:mb-6"
+                >
+                  A personal brand website designed to showcase expertise, build
+                  trust, and generate discovery calls.
+                </p>
+
+                <!-- Stats / Metrics Wrapper with Padding -->
+                <div class="mt-auto">
+                  <div
+                    class="grid grid-cols-12 gap-3 md:gap-4 py-2 items-center border-t border-dashed border-[#11263F]/32"
+                  >
+                    <span
+                      class="col-span-4 coaching-counter-item instrument-serif text-[#11263F] text-2xl xl:text-[28px] font-normal leading-[110%] uppercase"
+                      data-value="40"
+                      data-suffix="%"
+                      >40%</span
+                    >
+                    <span
+                      class="col-span-8 stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+                      >More website inquiries</span
+                    >
+                  </div>
+                  <div
+                    class="grid grid-cols-12 gap-3 md:gap-4 py-2 items-center border-t border-dashed border-[#11263F]/32"
+                  >
+                    <span
+                      class="col-span-4 coaching-counter-item instrument-serif text-[#11263F] text-2xl xl:text-[28px] font-normal leading-[110%] uppercase"
+                      data-value="12"
+                      data-suffix="+"
+                      >12+</span
+                    >
+                    <span
+                      class="col-span-8 stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+                      >Custom pages created</span
+                    >
+                  </div>
+                  <div
+                    class="grid grid-cols-12 gap-3 md:gap-4 py-2 items-center border-t border-dashed border-[#11263F]/32"
+                  >
+                    <span
+                      class="col-span-4 coaching-counter-item instrument-serif text-[#11263F] text-2xl xl:text-[28px] font-normal leading-[110%] uppercase"
+                      data-value="2"
+                      data-suffix="X"
+                      >2X</span
+                    >
+                    <span
+                      class="col-span-8 stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+                      >Discovery call bookings</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Business Coaching -->
+          <div
+            class="coaching-card-reveal group bg-white rounded-3xl md:rounded-4xl overflow-hidden flex flex-col justify-between"
+          >
+            <div>
+              <!-- Image (Edge-to-Edge, No outer padding) -->
+              <div class="relative w-full overflow-hidden h-64 md:h-72 m-0 p-0">
+                <img
+                  src="assets/images/coaching-business-coaching-website-to-convert-visitors.webp"
+                  alt="Business coaching website preview"
+                  class="w-full h-full object-cover block m-0 p-0 transition-transform duration-500 ease-out group-hover:scale-105"
+                />
+
+                <!-- Hover gradient overlay -->
+                <div
+                  class="absolute inset-0 pointer-events-none opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 bg-[linear-gradient(to_top,rgba(17,38,63,0.75)_0%,rgba(131,88,23,0.25)_55%,rgba(131,88,23,0)_100%)]"
+                ></div>
+              </div>
+
+              <!-- Top Content Wrapper with Padding -->
+              <div class="p-4 md:p-6 xl:p-8">
+                <!-- Badge -->
+                <div
+                  class="inline-flex self-start bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] px-3.5 py-1 md:px-3 md:py-1.5 lg:px-3.5 xl:px-4 xl:py-2 rounded-4xl items-center mb-2.5 md:mb-3 xl:mb-4"
+                >
+                  <span
+                    class="stack-sans-text text-[#734909] text-xs xl:text-base font-medium leading-5 uppercase"
+                  >
+                    Business Coaching
+                  </span>
+                </div>
+
+                <!-- Title -->
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500 mb-2.5 md:mb-3 xl:mb-4"
+                >
+                  Business Coaching Website to Convert Visitors
+                </h3>
+
+                <!-- Description -->
+                <p
+                  class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] mb-4 lg:mb-5 xl:mb-6"
+                >
+                  A strategic website built to communicate services clearly and
+                  guide visitors toward action.
+                </p>
+
+                <!-- Stats / Metrics Wrapper with Padding -->
+                <div class="mt-auto">
+                  <div
+                    class="grid grid-cols-12 gap-3 md:gap-4 py-2 items-center border-t border-dashed border-[#11263F]/32"
+                  >
+                    <span
+                      class="col-span-4 coaching-counter-item instrument-serif text-[#11263F] text-2xl xl:text-[28px] font-normal leading-[110%] uppercase"
+                      data-value="30"
+                      data-suffix="+"
+                      >30+</span
+                    >
+                    <span
+                      class="col-span-8 stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+                      >Qualified leads generated</span
+                    >
+                  </div>
+                  <div
+                    class="grid grid-cols-12 gap-3 md:gap-4 py-2 items-center border-t border-dashed border-[#11263F]/32"
+                  >
+                    <span
+                      class="col-span-4 coaching-counter-item instrument-serif text-[#11263F] text-2xl xl:text-[28px] font-normal leading-[110%] uppercase"
+                      data-value="12"
+                      data-suffix="+"
+                      >12+</span
+                    >
+                    <span
+                      class="col-span-8 stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+                      >Pages designed</span
+                    >
+                  </div>
+                  <div
+                    class="grid grid-cols-12 gap-3 md:gap-4 py-2 items-center border-t border-dashed border-[#11263F]/32"
+                  >
+                    <span
+                      class="col-span-4 coaching-counter-item instrument-serif text-[#11263F] text-2xl xl:text-[28px] font-normal leading-[110%] uppercase"
+                      data-value="40"
+                      data-suffix="%"
+                      >40%</span
+                    >
+                    <span
+                      class="col-span-8 stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+                      >Improved conversion flow</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Executive Coaching -->
+          <div
+            class="coaching-card-reveal group bg-white rounded-3xl md:rounded-4xl overflow-hidden flex flex-col justify-between"
+          >
+            <div>
+              <!-- Image (Edge-to-Edge, No outer padding) -->
+              <div class="relative w-full overflow-hidden h-64 md:h-72 m-0 p-0">
+                <img
+                  src="assets/images/coaching-executive-coaching-website-for-premium-clients.webp"
+                  alt="Executive coaching website preview"
+                  class="w-full h-full object-cover block m-0 p-0 transition-transform duration-500 ease-out group-hover:scale-105"
+                />
+
+                <!-- Hover gradient overlay -->
+                <div
+                  class="absolute inset-0 pointer-events-none opacity-0 transition-opacity duration-500 ease-out group-hover:opacity-100 bg-[linear-gradient(to_top,rgba(17,38,63,0.75)_0%,rgba(131,88,23,0.25)_55%,rgba(131,88,23,0)_100%)]"
+                ></div>
+              </div>
+
+              <!-- Top Content Wrapper with Padding -->
+              <div class="p-4 md:p-6 xl:p-8">
+                <!-- Badge -->
+                <div
+                  class="inline-flex self-start bg-[radial-gradient(50%_50%_at_50%_50%,#F7F4EF_0%,#F3E5CD_100%)] px-3.5 py-1 md:px-3 md:py-1.5 lg:px-3.5 xl:px-4 xl:py-2 rounded-4xl items-center mb-2.5 md:mb-3 xl:mb-4"
+                >
+                  <span
+                    class="stack-sans-text text-[#734909] text-xs xl:text-base font-medium leading-5 uppercase"
+                  >
+                    Executive Coaching
+                  </span>
+                </div>
+
+                <!-- Title -->
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl sm:text-[28px] lg:text-[30px] xl:text-[36px] font-normal leading-[110%] uppercase group-hover:text-[#B88A44] transition-colors duration-500 mb-2.5 md:mb-3 xl:mb-4"
+                >
+                  Executive Coaching Website for Premium Clients
+                </h3>
+
+                <!-- Description -->
+                <p
+                  class="stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%] mb-4 lg:mb-5 xl:mb-6"
+                >
+                  A professional website experience created to highlight
+                  leadership expertise & attract ideal clients.
+                </p>
+
+                <!-- Stats / Metrics Wrapper with Padding -->
+                <div class="mt-auto">
+                  <div
+                    class="grid grid-cols-12 gap-3 md:gap-4 py-2 items-center border-t border-dashed border-[#11263F]/32"
+                  >
+                    <span
+                      class="col-span-4 coaching-counter-item instrument-serif text-[#11263F] text-2xl xl:text-[28px] font-normal leading-[110%] uppercase"
+                      data-value="70"
+                      data-suffix="%"
+                      >70%</span
+                    >
+                    <span
+                      class="col-span-8 stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+                      >Higher engagement rate</span
+                    >
+                  </div>
+                  <div
+                    class="grid grid-cols-12 gap-3 md:gap-4 py-2 items-center border-t border-dashed border-[#11263F]/32"
+                  >
+                    <span
+                      class="col-span-4 coaching-counter-item instrument-serif text-[#11263F] text-2xl xl:text-[28px] font-normal leading-[110%] uppercase"
+                      data-value="20"
+                      data-suffix="+"
+                      >20+</span
+                    >
+                    <span
+                      class="col-span-8 stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+                      >Trust elements added</span
+                    >
+                  </div>
+                  <div
+                    class="grid grid-cols-12 gap-3 md:gap-4 py-2 items-center border-t border-dashed border-[#11263F]/32"
+                  >
+                    <span
+                      class="col-span-4 coaching-counter-item instrument-serif text-[#11263F] text-2xl xl:text-[28px] font-normal leading-[110%] uppercase"
+                      data-value="3"
+                      data-suffix="X"
+                      >3X</span
+                    >
+                    <span
+                      class="col-span-8 stack-sans-text text-[#58687C] text-xs sm:text-sm xl:text-base font-normal leading-[140%]"
+                      >More consultation requests</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- Complete Coaching Website Package At One Price -->
+    <section class="w-full bg-[#11263F] overflow-hidden">
+      <div class="max-w-475 mx-auto grid grid-cols-1 xl:grid-cols-12">
+        <!-- Left Column (6 columns): Single Image with proper object-fit handling -->
+        <div
+          class="xl:col-span-6 relative w-full p-0 m-0 lg:h-175 xl:h-full order-2 xl:order-1"
+        >
+          <img
+            src="assets/images/coaching-complete-website-package.webp"
+            alt="Complete coaching website package preview"
+            class="w-full h-auto lg:h-full xl:h-full object-contain object-top block m-0 p-0 select-none pointer-events-none"
+          />
+        </div>
 
+        <!-- Right Column (6 columns): Content with requested responsive padding -->
+        <div
+          class="xl:col-span-6 flex flex-col justify-center px-4 py-12 md:px-8 md:py-16 lg:px-12 lg:py-20 xl:px-12 xl:py-24 2xl:px-24 2xl:py-38.75 order-1 xl:order-2"
+        >
+          <!-- Heading -->
+          <h2
+            class="coaching-heading-reveal instrument-serif text-white text-[28px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-normal leading-[110%] uppercase mb-3 lg:mb-4"
+          >
+            Complete Coaching Website Package At One Price
+          </h2>
+
+          <!-- Description -->
+          <p
+            class="stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%]"
+          >
+            The complete coaching website design package is $999 and includes
+            the logo, brand identity direction, the custom website and one month
+            of support after launch. No hourly surprises and no upsell to get
+            the parts you actually need.
+          </p>
+
+          <!-- Pricing Box -->
+          <div class="border-l border-[#B88A44] pl-4 my-4.5 md:my-6 xl:my-8">
+            <span
+              class="instrument-serif text-[#B88A44] text-base md:text-xl font-normal leading-[120%] uppercase block mb-2"
+            >
+              Everything Included
+            </span>
+            <div
+              class="instrument-serif text-[#B88A44] text-[32px] md:text-[36px] lg:text-[40px] font-normal leading-[120%] uppercase"
+            >
+              USD 999/One-Time
+            </div>
+          </div>
+
+          <!-- CTA Button Group -->
+          <div class="mb-4.5 md:mb-6 xl:mb-8">
+            <!-- Primary button -->
+            <a
+              href="#"
+              class="group inline-flex items-stretch rounded-2xl border border-[#B88A44] bg-transparent overflow-hidden text-white text-sm lg:text-base font-bold uppercase"
+            >
+              <!-- Left: Label Area with cubic rolling text effect -->
+              <span
+                class="relative flex items-center justify-center bg-[#B88A44] px-6 py-4 lg:px-8 lg:py-5 overflow-hidden transition-colors duration-500 group-hover:text-[#B88A44]"
+              >
+                <!-- Pure fade background without sliding -->
+                <span
+                  aria-hidden="true"
+                  class="absolute inset-0 bg-[#D8C3A5] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                ></span>
+
+                <!-- cube roll container -->
+                <span class="relative block h-5 perspective-[600px]">
+                  <span
+                    aria-hidden="true"
+                    class="invisible block h-5 whitespace-nowrap"
+                    >BOOK A CALL ON CALENDLY</span
+                  >
+                  <span
+                    class="absolute inset-0 block transform-3d transform-[translateZ(-0.625rem)_rotateX(0deg)] transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:transform-[translateZ(-0.625rem)_rotateX(-90deg)]"
+                  >
+                    <!-- front face -->
+                    <span
+                      class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(0deg)_translateZ(0.625rem)]"
+                    >
+                      BOOK A CALL ON CALENDLY
+                    </span>
+                    <!-- bottom face (rolls into view) -->
+                    <span
+                      aria-hidden="true"
+                      class="absolute inset-0 flex items-center whitespace-nowrap backface-hidden transform-[rotateX(90deg)_translateZ(0.625rem)]"
+                    >
+                      BOOK A CALL ON CALENDLY
+                    </span>
+                  </span>
+                </span>
+              </span>
+
+              <!-- Right: Arrow Area -->
+              <span
+                class="relative flex items-center justify-center border-l border-[#B88A44] px-3 lg:px-4 text-[#B88A44] overflow-hidden group-hover:text-white transition-colors duration-500"
+              >
+                <!-- Pure fade background without sliding -->
+                <span
+                  aria-hidden="true"
+                  class="absolute inset-0 bg-[#B88A44] opacity-0 transition-opacity duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:opacity-100"
+                ></span>
+
+                <span
+                  class="relative w-8 h-8 overflow-hidden flex items-center justify-center"
+                >
+                  <img
+                    src="assets/images/coaching-arrow-up-right-gold.svg"
+                    alt
+                    class="absolute inset-0 m-auto w-8 h-8 transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-full group-hover:-translate-y-full"
+                  />
+                  <img
+                    src="assets/images/coaching-arrow-up-right-white.svg"
+                    alt
+                    class="absolute inset-0 m-auto w-8 h-8 -translate-x-full translate-y-full transition-transform duration-500 ease-[cubic-bezier(.65,0,.35,1)] group-hover:translate-x-0 group-hover:translate-y-0"
+                  />
+                </span>
+              </span>
+            </a>
+          </div>
+
+          <!-- Features Checkmarks List -->
+          <ul
+            class="space-y-2 stack-sans-text text-[#99B3D3] text-xs md:text-sm xl:text-base font-normal leading-[140%]"
+          >
+            <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+              <img
+                src="assets/images/coaching-banner-check.svg"
+                alt="check"
+                class="w-4 md:w-5.5 object-contain"
+              />
+              <span>Custom design, no templates</span>
+            </li>
+            <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+              <img
+                src="assets/images/coaching-banner-check.svg"
+                alt="check"
+                class="w-4 md:w-5.5 object-contain"
+              />
+              <span>Logo and brand direction included</span>
+            </li>
+            <li class="flex items-center gap-1.5 md:gap-2 lg:gap-3">
+              <img
+                src="assets/images/coaching-banner-check.svg"
+                alt="check"
+                class="w-4 md:w-5.5 object-contain"
+              />
+              <span>One month post-launch support</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Coaching website questions -->
+    <section class="bg-white py-12 md:py-16 lg:py-20 xl:py-24">
+      <div class="container">
+        <!-- section heading -->
+        <div class="max-w-248 text-center mb-6 md:mb-10 lg:mb-12 mx-auto">
+          <!-- Main Heading -->
+          <h2
+            class="coaching-heading-reveal instrument-serif text-[#11263F] text-[28px] md:text-[40px] lg:text-[48px] xl:text-[56px] font-normal leading-[110%] uppercase"
+          >
+            Coaching website questions
+          </h2>
+        </div>
+
+        <!-- FAQ Grid Wrap -->
+        <div class="max-w-248 mx-auto w-full flex flex-col gap-2">
+          <!-- FAQ 1 -->
+          <div
+            class="coaching-card-reveal coaching-faq-item bg-[#F7F4EF] rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div
+              class="coaching-faq-trigger w-full flex items-center justify-between gap-3 md:gap-4 p-4 md:p-5 lg:p-6 cursor-pointer text-left"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="flex items-center gap-3 md:gap-4">
+                <div class="w-10 h-10 md:w-12 md:h-12 shrink-0">
+                  <img
+                    src="assets/images/coaching-question-q.svg"
+                    alt="Q"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl md:text-2xl lg:text-[28px] font-normal leading-[110%] uppercase"
+                >
+                  How much does a coaching website cost?
+                </h3>
+              </div>
+              <span class="coaching-icon-close shrink-0 text-white">
+                <img
+                  src="assets/images/coaching-plus.svg"
+                  class="w-8 md:w-10 lg:w-12 object-contain"
+                  alt="arrow icon"
+                />
+              </span>
+            </div>
+
+            <div
+              class="coaching-faq-content overflow-hidden"
+              style="max-height: 0"
+            >
+              <div
+                class="flex items-start sm:gap-4 gap-3 px-4 md:px-6 pb-4 md:pb-6"
+              >
+                <div class="flex items-stretch sm:gap-4 gap-3 flex-1">
+                  <div class="flex-1">
+                    <p
+                      class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%]"
+                    >
+                      Our complete coaching website package is offered at a flat
+                      rate of $999 with zero hidden fees or hourly surprises,
+                      including logo design, brand direction, the custom
+                      website, and one month of post-launch support.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div
+            class="coaching-card-reveal coaching-faq-item bg-[#F7F4EF] rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div
+              class="coaching-faq-trigger w-full flex items-center justify-between gap-3 md:gap-4 p-4 md:p-5 lg:p-6 cursor-pointer text-left"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="flex items-center gap-3 md:gap-4">
+                <div class="w-10 h-10 md:w-12 md:h-12 shrink-0">
+                  <img
+                    src="assets/images/coaching-question-q.svg"
+                    alt="Q"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl md:text-2xl lg:text-[28px] font-normal leading-[110%] uppercase"
+                >
+                  What should a life coach website include?
+                </h3>
+              </div>
+              <span class="coaching-icon-close shrink-0 text-white">
+                <img
+                  src="assets/images/coaching-plus.svg"
+                  class="w-8 md:w-10 lg:w-12 object-contain"
+                  alt="arrow icon"
+                />
+              </span>
+            </div>
+
+            <div
+              class="coaching-faq-content overflow-hidden"
+              style="max-height: 0"
+            >
+              <div
+                class="flex items-start sm:gap-4 gap-3 px-4 md:px-6 pb-4 md:pb-6"
+              >
+                <div class="flex items-stretch sm:gap-4 gap-3 flex-1">
+                  <div class="flex-1">
+                    <p
+                      class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%]"
+                    >
+                      A high-converting life coach website should include a
+                      clear five-second hero section, a defined niche and offer
+                      pages, an about page showcasing your expertise,
+                      trust-building client reviews, and direct pathways like
+                      Calendly integration for booking discovery calls.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div
+            class="coaching-card-reveal coaching-faq-item bg-[#F7F4EF] rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div
+              class="coaching-faq-trigger w-full flex items-center justify-between gap-3 md:gap-4 p-4 md:p-5 lg:p-6 cursor-pointer text-left"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="flex items-center gap-3 md:gap-4">
+                <div class="w-10 h-10 md:w-12 md:h-12 shrink-0">
+                  <img
+                    src="assets/images/coaching-question-q.svg"
+                    alt="Q"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl md:text-2xl lg:text-[28px] font-normal leading-[110%] uppercase"
+                >
+                  What makes the best life coach website?
+                </h3>
+              </div>
+              <span class="coaching-icon-close shrink-0 text-white">
+                <img
+                  src="assets/images/coaching-plus.svg"
+                  class="w-8 md:w-10 lg:w-12 object-contain"
+                  alt="arrow icon"
+                />
+              </span>
+            </div>
+
+            <div
+              class="coaching-faq-content overflow-hidden"
+              style="max-height: 0"
+            >
+              <div
+                class="flex items-start sm:gap-4 gap-3 px-4 md:px-6 pb-4 md:pb-6"
+              >
+                <div class="flex items-stretch sm:gap-4 gap-3 flex-1">
+                  <div class="flex-1">
+                    <p
+                      class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%]"
+                    >
+                      The best life coach websites combine a professional
+                      personal brand aesthetic with strategic conversion
+                      design—communicating your value instantly, establishing
+                      deep credibility, and making it effortless for prospective
+                      clients to take action.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div
+            class="coaching-card-reveal coaching-faq-item bg-[#F7F4EF] rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div
+              class="coaching-faq-trigger w-full flex items-center justify-between gap-3 md:gap-4 p-4 md:p-5 lg:p-6 cursor-pointer text-left"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="flex items-center gap-3 md:gap-4">
+                <div class="w-10 h-10 md:w-12 md:h-12 shrink-0">
+                  <img
+                    src="assets/images/coaching-question-q.svg"
+                    alt="Q"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl md:text-2xl lg:text-[28px] font-normal leading-[110%] uppercase"
+                >
+                  Do coaches need a website, or is social media enough?
+                </h3>
+              </div>
+              <span class="coaching-icon-close shrink-0 text-white">
+                <img
+                  src="assets/images/coaching-plus.svg"
+                  class="w-8 md:w-10 lg:w-12 object-contain"
+                  alt="arrow icon"
+                />
+              </span>
+            </div>
+
+            <div
+              class="coaching-faq-content overflow-hidden"
+              style="max-height: 0"
+            >
+              <div
+                class="flex items-start sm:gap-4 gap-3 px-4 md:px-6 pb-4 md:pb-6"
+              >
+                <div class="flex items-stretch sm:gap-4 gap-3 flex-1">
+                  <div class="flex-1">
+                    <p
+                      class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%]"
+                    >
+                      While social media is great for visibility, you don't own
+                      your profile or followers. A dedicated website establishes
+                      professional authority, serves as a centralized hub to
+                      showcase your offers and client success stories, and
+                      converts casual scrollers into high-value discovery calls.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 5 -->
+          <div
+            class="coaching-card-reveal coaching-faq-item bg-[#F7F4EF] rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div
+              class="coaching-faq-trigger w-full flex items-center justify-between gap-3 md:gap-4 p-4 md:p-5 lg:p-6 cursor-pointer text-left"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="flex items-center gap-3 md:gap-4">
+                <div class="w-10 h-10 md:w-12 md:h-12 shrink-0">
+                  <img
+                    src="assets/images/coaching-question-q.svg"
+                    alt="Q"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl md:text-2xl lg:text-[28px] font-normal leading-[110%] uppercase"
+                >
+                  Can the site sell courses or group programs?
+                </h3>
+              </div>
+              <span class="coaching-icon-close shrink-0 text-white">
+                <img
+                  src="assets/images/coaching-plus.svg"
+                  class="w-8 md:w-10 lg:w-12 object-contain"
+                  alt="arrow icon"
+                />
+              </span>
+            </div>
+
+            <div
+              class="coaching-faq-content overflow-hidden"
+              style="max-height: 0"
+            >
+              <div
+                class="flex items-start sm:gap-4 gap-3 px-4 md:px-6 pb-4 md:pb-6"
+              >
+                <div class="flex items-stretch sm:gap-4 gap-3 flex-1">
+                  <div class="flex-1">
+                    <p
+                      class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%]"
+                    >
+                      Yes, your coaching website can be fully structured to
+                      feature, market, and sell your signature group coaching
+                      programs, online courses, digital lead magnets, and 1-on-1
+                      coaching packages seamlessly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ 6 -->
+          <div
+            class="coaching-card-reveal coaching-faq-item bg-[#F7F4EF] rounded-3xl md:rounded-4xl overflow-hidden"
+          >
+            <div
+              class="coaching-faq-trigger w-full flex items-center justify-between gap-3 md:gap-4 p-4 md:p-5 lg:p-6 cursor-pointer text-left"
+              role="button"
+              tabindex="0"
+              aria-expanded="false"
+            >
+              <div class="flex items-center gap-3 md:gap-4">
+                <div class="w-10 h-10 md:w-12 md:h-12 shrink-0">
+                  <img
+                    src="assets/images/coaching-question-q.svg"
+                    alt="Q"
+                    class="w-full h-full object-contain"
+                  />
+                </div>
+                <h3
+                  class="instrument-serif text-[#11263F] text-xl md:text-2xl lg:text-[28px] font-normal leading-[110%] uppercase"
+                >
+                  How long does it take?
+                </h3>
+              </div>
+              <span class="coaching-icon-close shrink-0 text-white">
+                <img
+                  src="assets/images/coaching-plus.svg"
+                  class="w-8 md:w-10 lg:w-12 object-contain"
+                  alt="arrow icon"
+                />
+              </span>
+            </div>
+
+            <div
+              class="coaching-faq-content overflow-hidden"
+              style="max-height: 0"
+            >
+              <div
+                class="flex items-start sm:gap-4 gap-3 px-4 md:px-6 pb-4 md:pb-6"
+              >
+                <div class="flex items-stretch sm:gap-4 gap-3 flex-1">
+                  <div class="flex-1">
+                    <p
+                      class="stack-sans-text text-[#58687C] text-xs md:text-sm lg:text-base font-normal leading-[140%]"
+                    >
+                      The entire design and development process—from your
+                      initial discovery call and logo/brand direction approval
+                      to building and launching your fully optimized coaching
+                      website—is streamlined for a fast, collaborative
+                      turnaround.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!--  Start Your Professional Coaching Website Design Today -->
     <section
@@ -2478,7 +3582,6 @@
         </div>
       </div>
     </footer>
-    <!-- footer section end -->
 
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
