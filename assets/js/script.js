@@ -216,7 +216,7 @@ gsap.ticker.lagSmoothing(0);
 
 
 
-// Pixxen Painting js start
+// Pixxen Coaching js start
 // ============================================
 // NAVBAR SCROLL BACKGROUND EFFECT
 // ============================================
